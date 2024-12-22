@@ -17,7 +17,9 @@ dotenv.config();
 
 //middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: "https://technest-f6dt.onrender.com"
+}))
 
 //db connection
 connectDB();
