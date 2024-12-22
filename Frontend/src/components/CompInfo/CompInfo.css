@@ -8,6 +8,7 @@
 
 .item-img img {
     width: 400px;
+    border-radus:5px;
 }
 
 .item-img {
