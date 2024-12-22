@@ -21,7 +21,8 @@ app.use(cors({
   origin: (origin, callback) => {
     const allowedOrigins = [
       "https://technest-f6dt.onrender.com",
-      "http://localhost:3000"
+      "http://localhost:3000",
+      "https://technest-admin.onrender.com"
     ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
