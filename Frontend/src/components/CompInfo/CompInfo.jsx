@@ -42,9 +42,7 @@ const CompInfo = () => {
 
   }, [id]);
 
-  useEffect(() => {
-    console.log("Updated CompInfo:", CompInfo);
-  }, [CompInfo]);
+
 
   return (
     <>
