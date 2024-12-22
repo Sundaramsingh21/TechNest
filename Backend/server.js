@@ -18,8 +18,20 @@ dotenv.config();
 //middleware
 app.use(express.json())
 app.use(cors({
-  origin: "https://technest-f6dt.onrender.com"
-}))
+  origin: (origin, callback) => {
+    const allowedOrigins = [
+      "https://technest-f6dt.onrender.com",
+      "http://localhost:3000"
+    ];
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+}));
 
 //db connection
 connectDB();
