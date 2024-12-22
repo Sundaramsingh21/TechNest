@@ -1,0 +1,43 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #a9a9a9;
+
+}
+.navbar .logo{
+    width: max(17%,80px);
+}
+.navbar .profile{
+    width: 22px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.right .logout{
+    width: 35px;
+    filter: invert(1);
+    cursor: pointer;
+    &:hover{
+        transform: scale(0.9);
+    }
+    
+}
+@media (max-width:500px) {
+    .navbar .logo{
+        width: max(27%,80px);
+    }
+    .right .logout{
+        width: 28px;
+    }
+    .navbar .profile{
+        width: 19px;
+    }
+}

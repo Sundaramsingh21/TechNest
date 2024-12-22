@@ -1,0 +1,118 @@
+.list-table-format{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+.list-table-format.title{
+    background-color: #f8f8f8;
+}
+.list-table-format img{
+    width: 60px;
+    height: 48px;
+}
+.list-table-format .cursor{
+    cursor: pointer;
+    padding: 5px 6px;
+}
+.list-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-head input{
+    padding: 8px 12px;
+    border: none;
+    border: 1px solid rgb(203, 203, 247);
+    border-radius: 8px;
+    width: 160px;
+    
+    &:hover{
+        border: 1px solid rgb(118, 118, 245);
+    }
+
+}
+.list-table-format .cursors{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(111 113 117);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: small;
+    width: 65px;
+    cursor: pointer;
+    padding: 5px 6px;
+    &:hover{
+        transform: scale(0.97);
+    }
+}
+.delete-btn{
+    cursor: pointer;
+    text-align: center;
+    background-color: rgb(224, 47, 47);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: small;
+    width: 65px;
+    cursor: pointer;
+    padding: 5px 6px;
+    &:hover{
+        transform: scale(0.97);
+    }
+
+}
+.button-action{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.list-table-format select{
+    background-color: rgb(182, 250, 250);
+    border: 1 px solid rgb(4, 185, 185);
+    border-radius: 6px;
+    width: max(5vw,100px);
+    padding: 5px;
+    outline: none;
+}
+
+@media (max-width:680px) {
+    .list-table-format{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+   
+    .list-head input{
+        padding: 6px 9px;
+        width: 120px;
+    }
+    .list-table-format select{
+        border-radius: 6px;
+        width: max(5vw,88px);
+        padding: 3px;
+        
+    }
+    .delete-btn{
+        font-size: smaller;
+    }
+    .list-table-format .cursors{
+        font-size: smaller;
+    }
+}
+@media (max-width:700px) {
+    div.Toastify__toast-container{ 
+        width: 70%;
+        max-width: 400px;
+        top: 10px;
+        right:0;
+        left:auto;
+        bottom: auto;
+
+    }
+    
+}
