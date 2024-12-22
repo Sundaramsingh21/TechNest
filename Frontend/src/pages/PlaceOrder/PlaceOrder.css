@@ -44,7 +44,7 @@
 
 }
 .payment .payupi{
-    gap: 10px;
+    gap: 8px;
     flex-direction: column;
     display: flex;
     width: 200px;
@@ -87,7 +87,7 @@
 
 
 .payment img {
-    width: 200px;
+    width: 182px;
     border-radius: 5px;
     margin-top: 6px;
     animation: 1s;
