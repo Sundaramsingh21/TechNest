@@ -1,0 +1,118 @@
+.compinfo-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.item-img img {
+    width: 400px;
+}
+
+.item-img {
+    /* border: 1px solid black;
+    border-radius: 5px; */
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-details {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+
+.item-details img {
+    width: 70px;
+    filter: invert(1);
+}
+
+.item-details #product-id {
+    font-size: small;
+    color: #676767;
+}
+
+.item-details button {
+    background-color: black;
+    color: white;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#add-button-disable{
+    background-color: rgb(153, 153, 153);
+    color: white;
+    padding: 9px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.item-description p {
+    color: #676767;
+}
+
+.add-remove {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(255 255 255);
+    width: 115px;
+    box-shadow: 4px 4px 9px #00000054;
+    border-radius: 20px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.add-remove img {
+    width: 40px;
+}
+.add-remove .operation1,.operation2{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight:500;
+
+}
+.add-remove .operation1{
+    color: #ff1a1a;
+    background-color: #ffd1d1;
+}
+.add-remove .operation2{
+    color: #0cc71f;
+    background-color: #d4ffd6;
+}
+
+@media (max-width: 720px) {
+    .compinfo-container {
+        flex-direction: column;
+    }
+
+    .item-img {
+        width: 100%;
+    }
+
+    .item-details {
+        width: 100%;
+
+    }
+
+    .item-img img {
+        width: 300px;
+    }
+}

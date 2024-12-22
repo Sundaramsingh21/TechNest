@@ -1,0 +1,68 @@
+.Forget-Popup{
+    position: absolute;
+    z-index: 1;
+    top: 57px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.forget-popup-container{
+    place-self: center;
+    width: max(23vw,330px);
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: FadeIn 0.4s;
+}
+.forget-popup-container .step{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+.step button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgb(4, 185, 185);
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    &:hover{
+        transform: scale(0.98);
+    }
+}
+.step input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.step div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.step div img{
+    width: 17px;
+    cursor: pointer;
+}
+@media (max-width:700px) {
+    div.Toastify__toast-container{ 
+        width: 70%;
+        max-width: 400px;
+        top: 10px;
+        right:0;
+        left:auto;
+        bottom: auto;
+
+    }
+    
+}

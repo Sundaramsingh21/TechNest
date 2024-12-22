@@ -1,0 +1,247 @@
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 23;
+    background-color: white;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    width: 180px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #49557e;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.navbar button {
+    background-color: #636b85;
+    font-size: 16px;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #7b7e8a;
+
+    }
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+
+}
+
+.navbar-search-icon {
+    position: relative;
+}
+
+.navbar-search-icon .dot {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: rgb(10, 197, 10);
+    border-radius: 5px;
+    top: -4px;
+    right: -8px;
+
+}
+
+.navbar-Profile {
+    position: relative;
+
+    &:hover {
+        transform: scale(0.94);
+    }
+
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-Profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgb(237, 248, 248);
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 0.5px solid rgb(156, 240, 240);
+    outline: 2px solid white;
+    list-style: none;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+
+}
+
+.navbar-right lord-icon {
+    width: 40px;
+    height: 40px;
+
+}
+
+.nav-profile-dropdown img {
+    width: 20px;
+    filter: invert(1);
+}
+
+.nav-profile-dropdown li:hover {
+    color: rgb(3, 177, 177);
+}
+
+@media (max-width:1050px) {
+    .navbar .logo {
+        width: 140px;
+
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right lord-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width:900px) {
+    .navbar-right button {
+        padding: 7px 19px;
+        font-size: 15px;
+    }
+
+    .navbar .logo {
+        width: 120px;
+
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right lord-icon {
+        width: 31px;
+        height: 31px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 19px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:720px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        justify-content: space-between;
+        margin: 1px 30px;
+        background-color: white;
+        position: relative;
+    }
+
+    .navbar .logo {
+        width: 125px;
+    }
+
+    .navbar-right img {
+        width: 18px;
+    }
+
+    .navbar-right lord-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar-right {
+        gap: 15px;
+    }
+
+    .navbar-search-icon .dot {
+
+        min-width: 7px;
+        min-height: 7px;
+        right: 1px;
+
+    }
+    .navbar-right button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    .navbar-Profile:hover .nav-profile-dropdown {
+        gap: 5px;
+        padding: 9px 14px;
+        margin-top: 6px;
+    }
+    
+    .nav-profile-dropdown li {
+        gap: 6px;  
+    
+    }    
+    .nav-profile-dropdown img {
+        width: 18px;
+        
+    }
+
+}

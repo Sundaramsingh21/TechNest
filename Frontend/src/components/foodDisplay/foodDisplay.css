@@ -1,0 +1,24 @@
+.Item-display{
+    margin-top: 30px;
+}
+.Item-display h2{
+    font-size: max(2vw, 24px);
+    font-weight: 500;
+    cursor:default;
+}
+.Item-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    margin-top: 30px;
+    gap: 25px;
+    row-gap: 50px;
+}
+@media (max-width:680px) {
+    .Item-display-list{
+        grid-template-columns: 1.7fr 1.7fr;
+        gap: 8px;
+        row-gap: 25px;
+        margin-top: 20px;
+    }
+    
+}
