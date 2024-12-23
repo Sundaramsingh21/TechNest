@@ -93,7 +93,7 @@ const List = ({ url }) => {
           <b>Action</b>
           <b>Update</b>
         </div>
-        {LoaderL ? <Loader /> : <></>}
+        <center>{LoaderL ? <Loader /> : <></>}</center>
 
         {List.map((item, index) => {
           return (
