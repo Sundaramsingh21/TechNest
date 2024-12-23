@@ -77,8 +77,8 @@ const Add = ({url}) => {
               <option value="Projects">Projects</option>
               <option value="Capacitors">Capacitors</option>
               <option value="LEDs">LEDs</option>
-              <option value="Registers">Registers</option>
-              <option value="Microcontrollers">Microcontrollers</option>
+              <option value="Resistors">Resistors</option>
+              <option value="Arduino Boards">Arduino Boards</option>
               <option value="Sensors">Sensors</option>
               <option value="Wires">Wires</option>
               <option value="Switches">Switches</option>
