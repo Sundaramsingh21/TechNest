@@ -8,7 +8,7 @@ const foodDisplay = ({ category }) => {
   return (
     <div className='Item-display' id='Item-display'>
       <h2>Top Items</h2>
-      {LoaderF?<Loader/>:<></>}
+      <center>{LoaderF?<Loader/>:<></>}</center>
       <div className="Item-display-list">
         {food_list.map((item, index) => {
           if (category === "All" || category === item.category) {
