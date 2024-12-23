@@ -78,7 +78,7 @@ const CompItem = ({ id, name, price, description, image, stock }) => {
                 <div className="food-item-info">
                     <div className="food-item-name-rating">
                         <p>{name}</p>
-                        <img src={assets.rating_starts} alt="" />
+                        
                     </div>
                     <p className="food-item-desc">{description}</p>
                     <div className='price-stock'>
