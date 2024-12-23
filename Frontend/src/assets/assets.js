@@ -88,11 +88,11 @@ export const menu_list = [
         menu_image: menu_3
     },
     {
-        menu_name: "Registers",
+        menu_name: "Resistors",
         menu_image: menu_4
     },
     {
-        menu_name: "Microcontrollers",
+        menu_name: "Arduino Boards",
         menu_image: menu_5
     },
     {
