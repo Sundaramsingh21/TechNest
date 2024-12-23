@@ -70,7 +70,11 @@ const CompInfo = () => {
               <div onClick={() => AddToCart(id)} className="operation2">
                 <p>+</p>
               </div>
-            </div><button id='add-button-disable'>Add To Cart</button></>
+            </div>
+              <p style={{ fontSize: "small", color: "#676767" }}>
+                Add quantities you want, it will automatically added to Cart.
+              </p>
+              <button id='add-button-disable'>Add To Cart</button></>
             ) :
 
             (CompInfo.stock === "Out of stock" ? (<button onClick={itemOutofstock}>Add To Cart</button>) : (<button onClick={() => AddToCart(id)}>Add To Cart</button>))}
