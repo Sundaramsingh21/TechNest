@@ -1,0 +1,92 @@
+.frontend-loader-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 30px;
+    gap: 25px;
+    row-gap: 50px;
+}
+
+.frontend-main-loader {
+    width: 100%;
+    min-height: 340px;
+    max-height: 340px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+    cursor: pointer;
+    overflow: hidden;
+    border: 0.1px solid #a19e9e;
+
+}
+
+.frontend-main-loader .frontend-img {
+    height: 190px;
+    background-color: #a19e9e;
+    margin: 8px 8px 1px 8px;
+    border-radius: 15px 15px 0px 0px;
+    animation: glow 1.5s infinite;
+}
+
+.frontend-details {
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.name-rating .name {
+    width: 120px;
+    height: 10px;
+    background-color: #a19e9e;
+    border-radius: 2px;
+    animation: glow 1.5s infinite;
+}
+
+.frontend-details .description p {
+    width: 200px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: #a19e9e;
+    margin-top: 10px;
+    animation: glow 1.5s infinite;
+}
+
+.frontend-details .price p {
+    margin-top: 10px;
+}
+
+@keyframes glow {
+    0% {
+        background-color: #dfdede;
+    }
+    100% {
+        background-color: #bfbcbc;
+        
+    }
+}
+@media (max-width:680px) {
+    .frontend-loader-container {
+        grid-template-columns: 1.7fr 1.7fr;
+        gap: 8px;
+        row-gap: 25px;
+        margin-top: 20px;
+    }
+    .frontend-details .description p {
+        width: 150px;
+        height: 8px;
+        background-color: #a19e9e;
+        margin-top: 10px;
+    }
+    .frontend-main-loader .frontend-img {
+        height: 150px;
+        background-color: #a19e9e;
+        margin: 8px 8px 1px 8px;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .frontend-main-loader {
+        min-height: 300px;
+        max-height: 300px;
+        
+    
+    }
+}
