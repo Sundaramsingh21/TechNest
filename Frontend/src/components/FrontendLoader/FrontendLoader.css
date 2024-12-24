@@ -50,7 +50,9 @@
     margin-top: 10px;
     animation: glow 1.5s infinite;
 }
-
+.frontend-details .price p {
+    margin-top: 10px;
+}
 
 
 @keyframes glow {
