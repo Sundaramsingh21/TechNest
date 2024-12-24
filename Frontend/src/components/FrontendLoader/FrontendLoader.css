@@ -35,10 +35,11 @@
 
 .name-rating .name {
     width: 120px;
-    height: 10px;
+    height: 9px;
     background-color: #a19e9e;
     border-radius: 2px;
     animation: glow 1.5s infinite;
+    
 }
 
 .frontend-details .description p {
