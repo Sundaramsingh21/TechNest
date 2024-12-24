@@ -20,8 +20,10 @@ const CompItem = ({ id, name, price, description, image, stock }) => {
         <div className='food-item'>
 
             <div className="food-item-img-container">
-                 {/* <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link> */
-                 <Link to={`/CompInfo/${id}/${name}/${price}/${description}/${image}/${stock}`}><img src={Items[image]} alt="" className="food-item-image" /></Link>}
+                 {/* <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link> */}
+                 <Link to={`/CompInfo/${id}/${name}/${price}/${description}/${image}/${stock}`}>
+                     <img src={Items[image]} alt="" className="food-item-image" />
+                 </Link>
                 {
                     !cartItems[id] ? (
                         stock === "Out of stock" ? (
