@@ -19,7 +19,9 @@ const FrontendLoader = () => {
                         <p></p>
                         <p></p>
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -40,7 +42,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -61,7 +65,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                   
+                   <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -82,7 +88,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -103,7 +111,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -124,7 +134,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -145,7 +157,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
@@ -166,7 +180,9 @@ const FrontendLoader = () => {
                         <p></p>
 
                     </div>
-                    
+                    <div className="price">
+                        <p>₹</p>
+                    </div>
                 </div>
 
             </div>
