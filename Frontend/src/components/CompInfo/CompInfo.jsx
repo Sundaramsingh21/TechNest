@@ -1,91 +1,98 @@
-import React, { useContext, useState, useEffect } from 'react'
-import './CompInfo.css'
-import { useParams } from 'react-router-dom';
+import React, { useContext } from 'react'
+import './CompItem.css'
+import { assets } from '../../assets/assets'
 import { StoreContext } from '../../Context/StoreContext'
 import { toast } from 'react-toastify'
-import axios from 'axios'
-import { assets } from '../../assets/assets'
+import { NavLink, Link } from 'react-router-dom'
+import { Items } from '../../assets/Items/Item'
 
-const CompInfo = () => {
+const CompItem = ({ id, name, price, description, image, stock }) => {
 
-  const { url, AddToCart, cartItems, RemoveFromCart } = useContext(StoreContext)
-  const [CompInfo, setCompInfo] = useState([])
 
-  const { id } = useParams();
-  const Comploader = async () => {
-    try {
-      const response = await axios.post(`${url}/api/component/compInfo`, { id });
+    const { cartItems, AddToCart, RemoveFromCart, url } = useContext(StoreContext)
 
-      if (response.data.success) {
-        setCompInfo(response.data.Data);
-      }
-      else {
-        toast.error("Error fetching component details");
-      }
-
-    } catch (error) {
-      console.error("Error details:", error);
-      toast.error("Error updating");
+    const itemOutofstock = () => {
+        toast.error("Item is Out of stock")
     }
 
-  }
-  const itemOutofstock = () => {
-    toast.error("Sorry, Item is Out of stock")
-  }
+    return (
 
-  useEffect(() => {
+        <div className='food-item'>
 
-    const loader = async () => {
-      await Comploader();
-    }
-    loader();
-
-  }, [id]);
-
-
-
-  return (
-    <>
-
-      <div className='compinfo-container'>
-        <div className="item-img">
-          <img src={url + "/images/" + CompInfo.image} alt="" />
-        </div>
-       
-        <div className="item-details">
-          <p id='product-id'>Product Id : ({CompInfo._id})</p>
-          <h2>{CompInfo.name}</h2>
-          <img src={assets.rating_starts} alt="" />
-          <p>₹{CompInfo.price}</p>
-
-          <div className="item-description">
-            <p>{CompInfo.description}</p>
-          </div>
-          {cartItems[id] ?
-            (<><div className="add-remove">
-              <div onClick={() => RemoveFromCart(id)} className="operation1">
-                <p>-</p>
-              </div>
-              <p>{cartItems[id]}</p>
-              <div onClick={() => AddToCart(id)} className="operation2">
-                <p>+</p>
-              </div>
+            <div className="food-item-img-container">
+                {/* <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link> */
+                    <Link to={`/CompInfo/${id}/${name}/${price}/${description}/${image}/${stock}`}><img src={Items[image]} alt="" className="food-item-image" /></Link>}
+                {
+                    !cartItems[id] ? (
+                        stock === "Out of stock" ? (
+                            <img
+                                className="add"
+                                onClick={itemOutofstock}
+                                src={assets.add_icon_white}
+                                alt="Add to cart"
+                            />
+                        ) : (
+                            <img
+                                className="add"
+                                onClick={() => AddToCart(id)}
+                                src={assets.add_icon_white}
+                                alt="Add to cart"
+                            />
+                        )
+                    ) : (
+                        <div className="Comp-item-count">
+                            {stock === "Out of stock" ?
+                                (
+                                    <>
+                                        <img
+                                            onClick={() => RemoveFromCart(id)}
+                                            src={assets.remove_icon_red}
+                                            alt="Remove from cart"
+                                        />
+                                        <p>{cartItems[id]}</p>
+                                        <img
+                                            onClick={itemOutofstock}
+                                            src={assets.add_icon_green}
+                                            alt="Add to cart"
+                                        />
+                                    </>
+                                ) : (
+                                    <>
+                                        <img
+                                            onClick={() => RemoveFromCart(id)}
+                                            src={assets.remove_icon_red}
+                                            alt="Remove from cart"
+                                        />
+                                        <p>{cartItems[id]}</p>
+                                        <img
+                                            onClick={() => AddToCart(id)}
+                                            src={assets.add_icon_green}
+                                            alt="Add to cart"
+                                        />
+                                    </>
+                                )}
+                        </div>
+                    )
+                }
             </div>
-              <p style={{ fontSize: "small", color: "#676767" }}>
-                Add quantities you want, it will automatically added to Cart.
-              </p>
-              <button id='add-button-disable'>Add To Cart</button></>
-            ) :
 
-            (CompInfo.stock === "Out of stock" ? (<button onClick={itemOutofstock}>Add To Cart</button>) : (<button onClick={() => AddToCart(id)}>Add To Cart</button>))}
+            <NavLink to={`/CompInfo/${id}/${name}/${price}/${description}/${image}/${stock}`}>
+                <div className="food-item-info">
+                    <div className="food-item-name-rating">
+                        <p>{name}</p>
+
+                    </div>
+                    <p className="food-item-desc">{description}</p>
+                    <div className='price-stock'>
+                        <p className="food-item-price">₹{price}</p>
+                        {/* <p className={stock === "In stock" ? "stockIn" : "stockOut"}>{stock}</p> */}
+                        {stock === "Out of stock" ? <p className='stockOut'>{stock}</p> : <></>}
+                    </div>
+                </div>
+            </NavLink>
+
         </div>
-
-      </div>
-
-    </>
-
-
-  )
+    )
 }
 
-export default CompInfo
+export default CompItem
