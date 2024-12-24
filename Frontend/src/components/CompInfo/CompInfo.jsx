@@ -1,98 +1,63 @@
-import React, { useContext } from 'react'
-import './CompItem.css'
-import { assets } from '../../assets/assets'
+import React, { useContext, useState, useEffect } from 'react'
+import './CompInfo.css'
+import { useParams } from 'react-router-dom';
 import { StoreContext } from '../../Context/StoreContext'
 import { toast } from 'react-toastify'
-import { NavLink, Link } from 'react-router-dom'
-import { Items } from '../../assets/Items/Item'
+import { assets } from '../../assets/assets'
+import { Items } from '../../assets/Items/Item';
 
-const CompItem = ({ id, name, price, description, image, stock }) => {
+const CompInfo = () => {
 
+  const { url, AddToCart, cartItems, RemoveFromCart } = useContext(StoreContext)
 
-    const { cartItems, AddToCart, RemoveFromCart, url } = useContext(StoreContext)
+  const { id, name, price, description, image, stock } = useParams();
 
-    const itemOutofstock = () => {
-        toast.error("Item is Out of stock")
-    }
+  const itemOutofstock = () => {
+    toast.error("Sorry, Item is Out of stock")
+  }
+  return (
+    <>
 
-    return (
-
-        <div className='food-item'>
-
-            <div className="food-item-img-container">
-                {/* <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link> */
-                    <Link to={`/CompInfo/${id}/${name}/${price}/${description}/${image}/${stock}`}><img src={Items[image]} alt="" className="food-item-image" /></Link>}
-                {
-                    !cartItems[id] ? (
-                        stock === "Out of stock" ? (
-                            <img
-                                className="add"
-                                onClick={itemOutofstock}
-                                src={assets.add_icon_white}
-                                alt="Add to cart"
-                            />
-                        ) : (
-                            <img
-                                className="add"
-                                onClick={() => AddToCart(id)}
-                                src={assets.add_icon_white}
-                                alt="Add to cart"
-                            />
-                        )
-                    ) : (
-                        <div className="Comp-item-count">
-                            {stock === "Out of stock" ?
-                                (
-                                    <>
-                                        <img
-                                            onClick={() => RemoveFromCart(id)}
-                                            src={assets.remove_icon_red}
-                                            alt="Remove from cart"
-                                        />
-                                        <p>{cartItems[id]}</p>
-                                        <img
-                                            onClick={itemOutofstock}
-                                            src={assets.add_icon_green}
-                                            alt="Add to cart"
-                                        />
-                                    </>
-                                ) : (
-                                    <>
-                                        <img
-                                            onClick={() => RemoveFromCart(id)}
-                                            src={assets.remove_icon_red}
-                                            alt="Remove from cart"
-                                        />
-                                        <p>{cartItems[id]}</p>
-                                        <img
-                                            onClick={() => AddToCart(id)}
-                                            src={assets.add_icon_green}
-                                            alt="Add to cart"
-                                        />
-                                    </>
-                                )}
-                        </div>
-                    )
-                }
-            </div>
-
-            <NavLink to={`/CompInfo/${id}/${name}/${price}/${description}/${image}/${stock}`}>
-                <div className="food-item-info">
-                    <div className="food-item-name-rating">
-                        <p>{name}</p>
-
-                    </div>
-                    <p className="food-item-desc">{description}</p>
-                    <div className='price-stock'>
-                        <p className="food-item-price">₹{price}</p>
-                        {/* <p className={stock === "In stock" ? "stockIn" : "stockOut"}>{stock}</p> */}
-                        {stock === "Out of stock" ? <p className='stockOut'>{stock}</p> : <></>}
-                    </div>
-                </div>
-            </NavLink>
-
+      <div className='compinfo-container'>
+        <div className="item-img">
+          {/* <img src={url + "/images/" + CompInfo.image} alt="" /> */}
+          <img src={Items[image]} alt="" />
         </div>
-    )
+
+        <div className="item-details">
+          <p id='product-id'>Product Id : ({id})</p>
+          <h2>{name}</h2>
+          <img src={assets.rating_starts} alt="" />
+          <p>₹{price}</p>
+
+          <div className="item-description">
+            <p>{description}</p>
+          </div>
+          {cartItems[id] ?
+            (<><div className="add-remove">
+              <div onClick={() => RemoveFromCart(id)} className="operation1">
+                <p>-</p>
+              </div>
+              <p>{cartItems[id]}</p>
+              <div onClick={() => AddToCart(id)} className="operation2">
+                <p>+</p>
+              </div>
+            </div>
+              <p style={{ fontSize: "small", color: "#676767" }}>
+                Add quantities you want, it will automatically added to Cart.
+              </p>
+              <button id='add-button-disable'>Add To Cart</button></>
+            ) :
+
+            (stock === "Out of stock" ? (<button onClick={itemOutofstock}>Add To Cart</button>) : (<button onClick={() => AddToCart(id)}>Add To Cart</button>))}
+        </div>
+
+      </div>
+
+    </>
+
+
+  )
 }
 
-export default CompItem
+export default CompInfo
