@@ -4,6 +4,7 @@ import { assets } from '../../assets/assets'
 import { StoreContext } from '../../Context/StoreContext'
 import { toast } from 'react-toastify'
 import { NavLink ,Link} from 'react-router-dom'
+import { Items } from '../../assets/Items/Item'
 
 const CompItem = ({ id, name, price, description, image, stock }) => {
 
@@ -19,7 +20,8 @@ const CompItem = ({ id, name, price, description, image, stock }) => {
         <div className='food-item'>
 
             <div className="food-item-img-container">
-                <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link>
+                 {/* <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link> */
+                 <Link to={`/CompInfo/${id}`}><img src={Items[image]} alt="" className="food-item-image" /></Link>}
                 {
                     !cartItems[id] ? (
                         stock === "Out of stock" ? (
