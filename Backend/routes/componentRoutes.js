@@ -1,5 +1,5 @@
 import express from "express"
-import { addComponent ,CompInfo,listComponent ,removecomponent, updateprice, updateStock} from "../controllers/componentController.js"
+import { addComponent ,listComponent ,removecomponent, updateprice, updateStock} from "../controllers/componentController.js"
 import multer from "multer"
 
 const componentRouter = express.Router();
@@ -21,6 +21,6 @@ componentRouter.get("/list",listComponent);
 componentRouter.post("/remove",removecomponent);
 componentRouter.post("/update",updateprice);
 componentRouter.post("/update/stock",updateStock);
-componentRouter.post("/compInfo",CompInfo)
+// componentRouter.post("/compInfo",CompInfo)
 
 export default componentRouter;
