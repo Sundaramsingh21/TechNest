@@ -12,7 +12,7 @@ const CompInfo = () => {
 
   const { id, name, price, description, image, stock } = useParams();
 
-  let decodedName, decodedDescription, decodedImage;
+  let decodedName, decodedDescription, decodedImage,decodedstock;
 
   try {
     decodedName = decodeURIComponent(name);
