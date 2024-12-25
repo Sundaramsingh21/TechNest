@@ -12,6 +12,19 @@ const CompInfo = () => {
 
   const { id, name, price, description, image, stock } = useParams();
 
+  let decodedName, decodedDescription, decodedImage;
+
+  try {
+    decodedName = decodeURIComponent(name);
+    decodedDescription = decodeURIComponent(description);
+    decodedImage = decodeURIComponent(image);
+  } catch (error) {
+    decodedName = name;
+    decodedDescription = description;
+    decodedImage = image;
+  }
+
+  
   const itemOutofstock = () => {
     toast.error("Sorry, Item is Out of stock")
   }
@@ -21,17 +34,17 @@ const CompInfo = () => {
       <div className='compinfo-container'>
         <div className="item-img">
           {/* <img src={url + "/images/" + CompInfo.image} alt="" /> */}
-          <img src={Items[image]} alt="" />
+          <img src={Items[decodedImage]} alt="" />
         </div>
 
         <div className="item-details">
           <p id='product-id'>Product Id : ({id})</p>
-          <h2>{name}</h2>
+          <h2>{decodedName}</h2>
           <img src={assets.rating_starts} alt="" />
           <p>₹{price}</p>
 
           <div className="item-description">
-            <p>{description}</p>
+            <p>{decodedDescription}</p>
           </div>
           {cartItems[id] ?
             (<><div className="add-remove">
