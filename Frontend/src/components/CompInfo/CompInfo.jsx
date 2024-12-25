@@ -18,10 +18,12 @@ const CompInfo = () => {
     decodedName = decodeURIComponent(name);
     decodedDescription = decodeURIComponent(description);
     decodedImage = decodeURIComponent(image);
+    decodedstock = decodeURIComponent(stock);
   } catch (error) {
     decodedName = name;
     decodedDescription = description;
     decodedImage = image;
+    decodedstock = stock;
   }
 
   
@@ -62,7 +64,7 @@ const CompInfo = () => {
               <button id='add-button-disable'>Add To Cart</button></>
             ) :
 
-            (stock === "Out of stock" ? (<button onClick={itemOutofstock}>Add To Cart</button>) : (<button onClick={() => AddToCart(id)}>Add To Cart</button>))}
+            (decodedstock === "Out of stock" ? (<button onClick={itemOutofstock}>Add To Cart</button>) : (<button onClick={() => AddToCart(id)}>Add To Cart</button>))}
         </div>
 
       </div>
