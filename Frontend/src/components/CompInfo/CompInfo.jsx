@@ -11,6 +11,7 @@ const CompInfo = () => {
 
   const { url, AddToCart, cartItems, RemoveFromCart } = useContext(StoreContext)
   const [CompInfo, setCompInfo] = useState([])
+  const [imgLoadering, setimgLoadering] = useState(false)
 
   const { id } = useParams();
 
@@ -21,10 +22,12 @@ const CompInfo = () => {
   
   const Comploader = async () => {
     try {
+      setimgLoadering(true);
       const response = await axios.post(`${url}/api/component/compInfo`, { id });
 
       if (response.data.success) {
         setCompInfo(response.data.Data);
+        setimgLoadering(false);
       }
       else {
         toast.error("Error fetching component details");
@@ -67,7 +70,7 @@ const CompInfo = () => {
       <div className='compinfo-container'>
         <div className="item-img">
           {/* <img src={url + "/images/" + CompInfo.image} alt="" /> */}
-          {<img src={Items[CompInfo.image]} alt="" />}
+          {imgLoadering ? <img style={{ width: "120px", margin: "72px 7px", filter: "contrast(0.5)" }} src={assets.picture_loader} alt="" /> : <img src={Items[CompInfo.image]} alt="" />}
         </div>
 
         <div className="item-details">
