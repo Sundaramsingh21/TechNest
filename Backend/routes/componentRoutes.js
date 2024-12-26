@@ -22,6 +22,6 @@ componentRouter.get("/list",listComponent);
 componentRouter.post("/remove",removecomponent);
 componentRouter.post("/update",updateprice);
 componentRouter.post("/update/stock",updateStock);
-componentRouter.post("/compInfo",CompInfo)
+componentRouter.post("/compInfo",CompInfo);
 
 export default componentRouter;
