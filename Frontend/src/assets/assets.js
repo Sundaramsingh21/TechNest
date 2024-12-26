@@ -46,6 +46,7 @@ import right_arrow from './right-arrow.png'
 import Phone_pay from './Phone_pe.png'
 import Googlepay from './Googlepay.png'
 import Copy from './copy.png'
+import picture_loader from './picture_loader.png'
 
 export const assets = {
     Phone_pay,
@@ -71,7 +72,8 @@ export const assets = {
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    picture_loader
 }
 
 export const menu_list = [
