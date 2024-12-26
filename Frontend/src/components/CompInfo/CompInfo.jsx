@@ -14,6 +14,11 @@ const CompInfo = () => {
 
   const { id } = useParams();
 
+   window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+  
   const Comploader = async () => {
     try {
       const response = await axios.post(`${url}/api/component/compInfo`, { id });
