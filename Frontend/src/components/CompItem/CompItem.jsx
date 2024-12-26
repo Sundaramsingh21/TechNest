@@ -21,7 +21,7 @@ const CompItem = ({ id, name, price, description, image, stock }) => {
 
             <div className="food-item-img-container">
                  {/* <Link to={`/CompInfo/${id}`}><img src={url + "/images/" + image} alt="" className="food-item-image" /></Link> */}
-                 <Link to={`/CompInfo/${id}/${encodeURIComponent(image)}`}>
+                 <Link to={`/CompInfo/${id}`}>
                      <img src={Items[image]} alt="" className="food-item-image" />
                  </Link>
                 {
@@ -78,7 +78,7 @@ const CompItem = ({ id, name, price, description, image, stock }) => {
                 }
             </div>
 
-            <NavLink to={`/CompInfo/${id}/${encodeURIComponent(image)}`}>
+            <NavLink to={`/CompInfo/${id}`}>
                 <div className="food-item-info">
                     <div className="food-item-name-rating">
                         <p>{name}</p>
