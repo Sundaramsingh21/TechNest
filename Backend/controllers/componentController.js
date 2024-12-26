@@ -73,16 +73,16 @@ const updateStock = async(req,res)=>{
 
 }
 //Fetch Component by its id
-// const CompInfo = async(req,res)=>{
-//     try {
-//         const Component = await componentModel1.findById(req.body.id);
-//         res.json({success:true,Data:Component})
+const CompInfo = async(req,res)=>{
+    try {
+        const Component = await componentModel1.findById(req.body.id);
+        res.json({success:true,Data:Component})
 
-//     } catch (error) {
-//         console.log(error);
+    } catch (error) {
+        console.log(error);
         
         
-//     }
-// }
+    }
+}
 
-export  {addComponent,listComponent,removecomponent,updateprice,updateStock};
+export  {addComponent,listComponent,removecomponent,updateprice,updateStock,CompInfo};
