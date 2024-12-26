@@ -41,17 +41,18 @@ const CompInfo = () => {
 
   }, [id]);
 
+  let decodedImage;
   // let decodedName, decodedDescription, decodedImage;
 
-  // try {
-  //   decodedName = decodeURIComponent(name);
-  //   decodedDescription = decodeURIComponent(description);
-  //   decodedImage = decodeURIComponent(image);
-  // } catch (error) {
-  //   decodedName = name;
-  //   decodedDescription = description;
-  //   decodedImage = image;
-  // }
+  try {
+    // decodedName = decodeURIComponent(name);
+    // decodedDescription = decodeURIComponent(description);
+    decodedImage = decodeURIComponent(image);
+  } catch (error) {
+    // decodedName = name;
+    // decodedDescription = description;
+    decodedImage = image;
+  }
   const itemOutofstock = () => {
     toast.error("Sorry, Item is Out of stock")
   }
@@ -61,7 +62,7 @@ const CompInfo = () => {
       <div className='compinfo-container'>
         <div className="item-img">
           {/* <img src={url + "/images/" + CompInfo.image} alt="" /> */}
-          {<img src={Items[image]} alt="" />}
+          {<img src={Items[decodedImage]} alt="" />}
         </div>
 
         <div className="item-details">
