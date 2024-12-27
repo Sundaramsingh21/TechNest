@@ -27,6 +27,12 @@ import Resistor560kohm_resistor from '../Items/Resistors/1735273860241560K-ohm-R
 import Resistor82ohm_resistor from '../Items/Resistors/173527401912882ohm-Resistor_1024x1024.webp'
 import Resistor8_2kohm_resistor from '../Items/Resistors/17352741098198.2kohm-Resistor_1024x1024@2x.webp'
 
+//Arduino boards
+import Arduino_ATmega328p from './Ardunio_boards/1735274663391Arduino-Uno_1_1024x1024@2x.jpg'
+import Arduino__nano_ATmega328p from './Ardunio_boards/1735274718162ArduinoNanoV3.0Soldered_WithoutCable.jpg'
+import Arduino__nanonext_ATmega328p from './Ardunio_boards/1735274773300Arduino-Nano_1024x1024x.jpg'
+import Arduino_uno_clone from './Ardunio_boards/1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -66,6 +72,12 @@ export const Items ={
     '17352739617822kohm-Resistor_1024x1024@2x.webp' :  Resistor10ohm_resistor,
     '173527401912882ohm-Resistor_1024x1024.webp' :Resistor82ohm_resistor,
     '173527406564282K-ohm-Resistor_1024x1024@2x.webp' : Resistor33kohm_resistor,
-    '17352741098198.2kohm-Resistor_1024x1024@2x.webp' :Resistor8_2kohm_resistor
+    '17352741098198.2kohm-Resistor_1024x1024@2x.webp' :Resistor8_2kohm_resistor,
+
+    //Arduino boards
+    '1735274663391Arduino-Uno_1_1024x1024@2x.jpg' : Arduino_ATmega328p,
+    '1735274718162ArduinoNanoV3.0Soldered_WithoutCable.jpg' :Arduino__nano_ATmega328p,
+    '1735274773300Arduino-Nano_1024x1024x.jpg' : Arduino__nanonext_ATmega328p,
+    '1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp' : Arduino_uno_clone
 
 }
