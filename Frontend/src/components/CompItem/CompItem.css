@@ -35,6 +35,10 @@
 .food-item-name-rating p {
     font-size: 15px;
     font-weight: 500;
+     overflow: hidden;
+     display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 
 
 }
