@@ -4,6 +4,8 @@ import LED_yellow from '../Items/LED/17352710484115mm-LED-Yellow-Color_1024x1024
 import LED_orange from '../Items/LED/17352711500133mm-LED-Orange_1024x1024.webp'
 import LED_photodiode_reciever from '../Items/LED/1735272097163Photodiode_1_1024x1024@2x.webp'
 import LED_photodiode_transmitter from '../Items/LED/17352721574875mm-IR-Transmitter-LED_1024x1024@2x.webp'
+import LED_photodiode_transmitter_3mm from '../Items/LED/17352723519193mm-IR-Transmitter-LED_1024x1024@2x.png'
+import LED_photodiode_reciever_3mm from '../Items/LED/1735272255936Photodiode_1024x1024.webp'
 
 
 //Capacitor
@@ -44,8 +46,8 @@ export const Items ={
     '17352713818025mm-led-white_1024x1024.webp' : LED_orange,
     '1735272097163Photodiode_1_1024x1024@2x.webp': LED_photodiode_reciever,
     '17352721574875mm-IR-Transmitter-LED_1024x1024@2x.webp': LED_photodiode_transmitter,
-    '1735272255936Photodiode_1024x1024.webp': LED_photodiode_reciever,
-    '17352723519193mm-IR-Transmitter-LED_1024x1024@2x.png' : LED_photodiode_transmitter,
+    '1735272255936Photodiode_1024x1024.webp': LED_photodiode_reciever_3mm,
+    '17352723519193mm-IR-Transmitter-LED_1024x1024@2x.png' : LED_photodiode_transmitter_3mm,
 
     //Capacitor
     '173512842802047uF-25V.png' : capacitor_47uf_25v,
