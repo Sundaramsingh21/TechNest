@@ -4,7 +4,7 @@ import bcrypt from "bcrypt"
 import validator from "validator"
 import nodemailer from 'nodemailer';
 
-//otp sender
+//otp sender for signup
 export let otpStore = {};
 const OTPsender = async (req, res) => {
     const { email } = req.body;
