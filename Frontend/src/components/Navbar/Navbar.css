@@ -223,10 +223,9 @@
     .navbar {
         padding-bottom: 10px;
         padding-top: 10px;
-        padding-left: 9px;
-        padding-right: 9px;
+        padding-left: 17px;
+        padding-right: 16px;
         justify-content:space-between;
-        margin: 1px 14px;
         background-color: white;
         
     }
