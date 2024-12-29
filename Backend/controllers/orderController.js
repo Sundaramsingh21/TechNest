@@ -71,13 +71,22 @@ const sendEmail = async (items, address, amount) => {
 const placeOrder = async (req, res) => {
 
     try {
+        const currentDate = new Date();
+        const hours = currentDate.getHours();
+        const minutes = currentDate.getMinutes().toString().padStart(2, '0');
+        const ampm = hours >= 12 ? 'PM' : 'AM';
+        const formattedTime = `${(hours % 12 || 12).toString().padStart(2, '0')}:${minutes} ${ampm}`;
+        const formattedDateTime = `${currentDate.getDate().toString().padStart(2, '0')}/${(currentDate.getMonth() + 1).toString().padStart(2, '0')
+            }/${currentDate.getFullYear()} ${formattedTime}`;
+        
         const newOrder = new orderModel({
             userId: req.body.userId,
             items: req.body.items,
             amount: req.body.amount,
             status: "Order Placed",
             payment: true,
-            address: req.body.address
+            address: req.body.address,
+            current_date : formattedDateTime
         })
         await newOrder.save();
         let a = await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
