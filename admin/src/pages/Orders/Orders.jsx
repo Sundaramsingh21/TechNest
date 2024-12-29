@@ -107,6 +107,8 @@ const Orders = ({ url }) => {
                 <p className='order-item-phone'>{order.address.phone}</p>
               </div>
               <b>UTR : {order.address.utr}</b>
+              <br /><br />
+              <p >{order.current_date}</p>
             </div>
             <p>Items : {order.items.length}</p>
             <p>₹{order.amount}</p>
