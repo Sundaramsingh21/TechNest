@@ -5,23 +5,26 @@ import { StoreContext } from '../../Context/StoreContext'
 import { toast } from 'react-toastify'
 import { assets } from '../../assets/assets'
 import { Items } from '../../assets/Items/Item';
+import FrontendLoader from '../FrontendLoader/FrontendLoader';
+import CompItem from '../CompItem/CompItem'
 import axios from 'axios';
 
 const CompInfo = () => {
 
-  const { url, AddToCart, cartItems, RemoveFromCart } = useContext(StoreContext)
+  const { url, AddToCart, cartItems, RemoveFromCart, food_list, LoaderF } = useContext(StoreContext)
   const [CompInfo, setCompInfo] = useState([])
   const [imgLoadering, setimgLoadering] = useState(false)
 
   const { id } = useParams();
 
-   window.scrollTo({
+  window.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
-  
+
   const Comploader = async () => {
     try {
+
       setimgLoadering(true);
       const response = await axios.post(`${url}/api/component/compInfo`, { id });
 
@@ -40,30 +43,36 @@ const CompInfo = () => {
 
   }
 
+  const filteredlist = food_list.filter(item =>
+    item.category?.toLowerCase().includes(CompInfo.category?.toLowerCase() || "")
+  );
+
+
   useEffect(() => {
 
     const loader = async () => {
       await Comploader();
+
     }
     loader();
 
   }, [id]);
 
- //  let decodedImage;
- //   let decodedName, decodedDescription, decodedImage;
-
- // try {
- //     decodedName = decodeURIComponent(name);
- //     decodedDescription = decodeURIComponent(description);
- //    decodedImage = decodeURIComponent(image);
- //  } catch (error) {
- //     decodedName = name;
- //     decodedDescription = description;
- //    decodedImage = image;
- //  }
   const itemOutofstock = () => {
     toast.error("Sorry, Item is Out of stock")
   }
+
+  // let decodedName, decodedDescription, decodedImage;
+  // try {
+  //   decodedName = decodeURIComponent(name);
+  //   decodedDescription = decodeURIComponent(description);
+  //   decodedImage = decodeURIComponent(image);
+  // } catch (error) {
+  //   decodedName = name;
+  //   decodedDescription = description;
+  //   decodedImage = image;
+  // }
+
   return (
     <>
 
@@ -101,6 +110,17 @@ const CompInfo = () => {
             (CompInfo.stock === "Out of stock" ? (<button onClick={itemOutofstock}>Add To Cart</button>) : (<button onClick={() => AddToCart(id)}>Add To Cart</button>))}
         </div>
 
+      </div>
+      <div className='Item-display' id='Item-display'>
+        <h2>Recommended</h2>
+        {LoaderF ? <FrontendLoader /> : <></>}
+        <div className="Item-display-list">
+          {filteredlist.map((item, index) => {
+
+            return <CompItem key={index} id={item._id} name={item.name} description={item.description} price={item.price} image={item.image} stock={item.stock} />
+
+          })}
+        </div>
       </div>
 
     </>
