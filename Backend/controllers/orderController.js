@@ -87,7 +87,7 @@ const placeOrder = async (req, res) => {
         await newOrder.save();
         let a = await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
 
-        await sendEmail(newOrder.items, newOrder.address, newOrder.amount);
+        await sendEmail(newOrder.items, req.body.address, newOrder.amount);
 
         // Send success response
         res.json({ success: true, message: "Order placed successfully" });
