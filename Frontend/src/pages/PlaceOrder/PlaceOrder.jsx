@@ -139,7 +139,7 @@ const PlaceOrder = () => {
             <a onClick={() => setPaymentShow(true)}>Payment</a>
           ) : (
             // Confirm button will trigger the form submission and run placeOrder
-            LoaderP ? <Loader />: <button className='confirm'>Confirm</button>
+            LoaderP ?<><p>Please do not go back order is placing.</p><Loader /></> : <button className='confirm'>Confirm</button>
           )}
 
         </div>
