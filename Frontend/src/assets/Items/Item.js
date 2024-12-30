@@ -35,6 +35,16 @@ import Arduino__nano_ATmega328p from './Ardunio_boards/1735274718162ArduinoNanoV
 import Arduino__nanonext_ATmega328p from './Ardunio_boards/1735274773300Arduino-Nano_1024x1024x.jpg'
 import Arduino_uno_clone from './Ardunio_boards/1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp'
 
+//Sensors
+import Sensor_Colour_Sensor from './Sensors/1735542919025TCS3200-Based-Colour-Sensor-Module_1024x1024.webp'
+import Sensor_Moisture_Sensor from './Sensors/1735543001906Soil-Moisture-Sensor-Module.webp'
+import Sensor_Temperature_Sensor from './Sensors/1735543082267DHT11-Digital-Temperature-and-Humidity-Sensor_1024x1024.webp'
+import Sensor_Light_Detection from './Sensors/1735543137516Light-Detection-Sensor-Module_1024x1024@2x.webp'
+import Sensor_Photoelectric from './Sensors/1735543192868LM393-Photoelectric-Sensor-Module_1024x1024@2x.webp'
+import Sensor_Ultrasonic from './Sensors/1735543245004Ultrasonic-Sensor-Module-HC-SR04_1024x1024@2x.webp'
+import Sensor_pir from './Sensors/1735550715627pir_sensor.webp'
+
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -80,6 +90,15 @@ export const Items ={
     '1735274663391Arduino-Uno_1_1024x1024@2x.jpg' : Arduino_ATmega328p,
     '1735274718162ArduinoNanoV3.0Soldered_WithoutCable.jpg' :Arduino__nano_ATmega328p,
     '1735274773300Arduino-Nano_1024x1024x.jpg' : Arduino__nanonext_ATmega328p,
-    '1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp' : Arduino_uno_clone
+    '1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp' : Arduino_uno_clone,
+
+    //Sensors
+    '1735542919025TCS3200-Based-Colour-Sensor-Module_1024x1024.webp': Sensor_Colour_Sensor,
+    '1735543001906Soil-Moisture-Sensor-Module.webp': Sensor_Moisture_Sensor,
+    '1735543082267DHT11-Digital-Temperature-and-Humidity-Sensor_1024x1024.webp': Sensor_Temperature_Sensor,
+    '1735543137516Light-Detection-Sensor-Module_1024x1024@2x.webp': Sensor_Light_Detection,
+    '1735543192868LM393-Photoelectric-Sensor-Module_1024x1024@2x.webp' : Sensor_Photoelectric,
+    '1735543245004Ultrasonic-Sensor-Module-HC-SR04_1024x1024@2x.webp' : Sensor_Ultrasonic,
+    '1735550715627pir_sensor.webp': Sensor_pir
 
 }
