@@ -41,6 +41,13 @@
         transform: scale(0.98);
     }
 }
+.order-date p{
+    padding:2px 8px;
+    background-color:  rgb(174, 230, 230);
+    width: 90px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: small;
+}
 
 @media (max-width: 900px) {
     .my-order-orders{
