@@ -148,6 +148,14 @@ import gsm_ne06mv2 from './GSM & GPS/1735617155194NEO6MV2-gps-module_1024x1024.w
 import gsm_sim800L from './GSM & GPS/1735617190610SIM800LGPRSGSMModule.webp'
 import gsm_sim800L_650 from './GSM & GPS/1735617246754SIM800L-GPRS-Module.webp'
 
+//Battery
+import battery_2000mAh from './Battery/173562263128118650-Li-ion-2000mAh-Rechargeable-Battery.webp'
+import battery_1200mAh from './Battery/17356226645341200mah-battery_1024x1024@2x.webp'
+import battery_2500mAh from './Battery/1735622715962Hongli-18650-Li-ion-2500mAh-Battery_1024x1024.webp'
+import battery_2200mAh from './Battery/173562276321818650-Li-ion-2200mAh-Rechargeable-Battery-Copy.webp'
+import battery_2000mAh_original from './Battery/173562280310618650-Li-ion-Rechargeable-Battery.webp'
+import battery_2600mAh from './Battery/173562285114218650-Li-ion-2600mAh-Battery.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -312,6 +320,14 @@ export const Items ={
     '1735617116135SIM900-GSM-module.webp': gsm_sim900,
     '1735617155194NEO6MV2-gps-module_1024x1024.webp': gsm_ne06mv2,
     '1735617190610SIM800LGPRSGSMModule.webp': gsm_sim800L,
-    '1735617246754SIM800L-GPRS-Module.webp' :gsm_sim800L_650
+    '1735617246754SIM800L-GPRS-Module.webp' :gsm_sim800L_650,
+
+     //Battery
+    '173562263128118650-Li-ion-2000mAh-Rechargeable-Battery.webp' : battery_2000mAh,
+    '17356226645341200mah-battery_1024x1024@2x.webp' : battery_1200mAh,
+    '1735622715962Hongli-18650-Li-ion-2500mAh-Battery_1024x1024.webp': battery_2500mAh,
+    '173562276321818650-Li-ion-2200mAh-Rechargeable-Battery-Copy.webp' : battery_2200mAh,
+    '173562280310618650-Li-ion-Rechargeable-Battery.webp': battery_2000mAh_original,
+    '173562285114218650-Li-ion-2600mAh-Battery.webp' : battery_2600mAh
 
 }
