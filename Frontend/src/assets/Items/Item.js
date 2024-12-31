@@ -28,6 +28,10 @@ import Resistor1_5Mohm_resistor from '../Items/Resistors/17352737705531.5M-ohm-R
 import Resistor560kohm_resistor from '../Items/Resistors/1735273860241560K-ohm-Resistor_1024x1024.webp'
 import Resistor82ohm_resistor from '../Items/Resistors/173527401912882ohm-Resistor_1024x1024.webp'
 import Resistor8_2kohm_resistor from '../Items/Resistors/17352741098198.2kohm-Resistor_1024x1024@2x.webp'
+import Resistor_NTC_Thermistor from '../Items/Resistors/1735619133758NTC-Thermistor1024x1024@2x.webp'
+import Resistor_Variable_Resistor from '../Items/Resistors/1735619177720Variable-Resistor-Trimpot-Trimmer.webp'
+import Resistor_KPresentPotentiometer from '../Items/Resistors/1735619364377100KPresentPotentiometerTrimmerTrimpot.webp'
+import Resistor_1K_Ohm_Preset from '../Items/Resistors/17356195401161K-Ohm-Preset-Potentiometer_1024x1024@2x.webp'
 
 //Arduino boards
 import Arduino_ATmega328p from './Ardunio_boards/1735274663391Arduino-Uno_1_1024x1024@2x.jpg'
@@ -118,6 +122,12 @@ export const Items ={
     '173527401912882ohm-Resistor_1024x1024.webp' :Resistor82ohm_resistor,
     '173527406564282K-ohm-Resistor_1024x1024@2x.webp' : Resistor33kohm_resistor,
     '17352741098198.2kohm-Resistor_1024x1024@2x.webp' :Resistor8_2kohm_resistor,
+    '1735619133758NTC-Thermistor1024x1024@2x.webp' : Resistor_NTC_Thermistor,
+    '1735619177720Variable-Resistor-Trimpot-Trimmer.webp': Resistor_Variable_Resistor,
+    '1735619234468Variable-Resistor-Trimpot-Trimmer.webp' :  Resistor_Variable_Resistor,
+    '1735619272157Variable-Resistor-Trimpot-Trimmer.webp' : Resistor_Variable_Resistor,
+    '1735619364377100KPresentPotentiometerTrimmerTrimpot.webp' : Resistor_KPresentPotentiometer,
+    '17356195401161K-Ohm-Preset-Potentiometer_1024x1024@2x.webp': Resistor_1K_Ohm_Preset,
 
     //Arduino boards
     '1735274663391Arduino-Uno_1_1024x1024@2x.jpg' : Arduino_ATmega328p,
