@@ -43,6 +43,21 @@ import Sensor_Light_Detection from './Sensors/1735543137516Light-Detection-Senso
 import Sensor_Photoelectric from './Sensors/1735543192868LM393-Photoelectric-Sensor-Module_1024x1024@2x.webp'
 import Sensor_Ultrasonic from './Sensors/1735543245004Ultrasonic-Sensor-Module-HC-SR04_1024x1024@2x.webp'
 import Sensor_pir from './Sensors/1735550715627pir_sensor.webp'
+import Sensor_MQ3 from './Sensors/1735617344169MQ-3-Module_1024x1024@2x.webp'
+import Sensor_MQ3_module from './Sensors/1735617441366MQ2-Gas-Sensor-Module@2x.webp'
+import Sensor_MQ9 from './Sensors/1735617472987MQ-9-Gas-Sensor-Module-for-Carbon-Monoxide.webp'
+import Sensor_MQ7 from './Sensors/1735617508562MQ7-Gas-Sensor_1024x1024@2x.webp'
+import Sensor_MQ135 from './Sensors/1735617703314MQ-135-Air-Quality-Gas-Sensor-Module_1024x1024@2x.webp'
+import Sensor_current_sensor from './Sensors/1735617809380ACS712-current-sensor_1024x1024@2x.webp'
+import Sensor_rain from './Sensors/1735617993340Rain-Drop-Sensor-Module24x1024@2x.webp'
+import Sensor_Capacitive_moisture from './Sensors/1735618048021IMG_4509_1024x1024@2x.webp'
+import Sensor_HeartRate from './Sensors/1735618458643MAX3010030102-HeartRate-Oxygen-Pulse-Sensor.webp'
+import Sensor_ecg from './Sensors/1735618764845AD8232-ECG-Heart-Rate-Monitor-Sensor-Module.webp'
+import Sensor_Finger_Print from './Sensors/1735618833896Finger-Print-Sensor-Module_1024x1024@2x.webp'
+import Sensor_Finger_Print_521f32 from './Sensors/1735618893932GT-521F32-Fingerprint-Sensor-Module_1024x1024@2x.webp'
+import Sensor_sound from './Sensors/1735618992049LM393-Sound-Sensor-Module_1024x1024@2x.webp'
+import Sensor_microphone from './Sensors/1735619031977KYMicrophoneLM393SoundDetectionModule.webp'
+import Sensor_electret_microphone from './Sensors/17356190754369x6-Electret-Microphone_1024x1024@2x.webp'
 
 //Motors
 import Motors_servo_motor from './Motors/1735615365758SG90-Servo-Motor_1024x1024@2x.webp'
@@ -117,6 +132,24 @@ export const Items ={
     '1735543192868LM393-Photoelectric-Sensor-Module_1024x1024@2x.webp' : Sensor_Photoelectric,
     '1735543245004Ultrasonic-Sensor-Module-HC-SR04_1024x1024@2x.webp' : Sensor_Ultrasonic,
     '1735550715627pir_sensor.webp': Sensor_pir,
+    '1735617344169MQ-3-Module_1024x1024@2x.webp': Sensor_MQ3,
+    '1735617441366MQ2-Gas-Sensor-Module@2x.webp':Sensor_MQ3_module,
+    '1735617472987MQ-9-Gas-Sensor-Module-for-Carbon-Monoxide.webp': Sensor_MQ9,
+    '1735617508562MQ7-Gas-Sensor_1024x1024@2x.webp': Sensor_MQ7,
+    '1735617552003DHT22-Temperature-and-Humidity-Sensor-Module.webp':Sensor_Temperature_Sensor,
+    '1735617703314MQ-135-Air-Quality-Gas-Sensor-Module_1024x1024@2x.webp' :  Sensor_MQ135,
+    '1735617809380ACS712-current-sensor_1024x1024@2x.webp' : Sensor_current_sensor,
+    '1735617867839ACS712-5A-current-sensor-module_1024x1024.webp' : Sensor_current_sensor,
+    '1735617993340Rain-Drop-Sensor-Module24x1024@2x.webp' :Sensor_rain,
+    '1735618048021IMG_4509_1024x1024@2x.webp' : Sensor_Capacitive_moisture,
+    '1735618458643MAX3010030102-HeartRate-Oxygen-Pulse-Sensor.webp' :Sensor_HeartRate,
+    '1735618529285Heartbeat-sensor.webp': Sensor_HeartRate,
+    '1735618764845AD8232-ECG-Heart-Rate-Monitor-Sensor-Module.webp': Sensor_ecg,
+    '1735618833896Finger-Print-Sensor-Module_1024x1024@2x.webp' :Sensor_Finger_Print,
+    '1735618893932GT-521F32-Fingerprint-Sensor-Module_1024x1024@2x.webp' :Sensor_Finger_Print_521f32,
+    '1735618992049LM393-Sound-Sensor-Module_1024x1024@2x.webp' : Sensor_sound,
+    '1735619031977KYMicrophoneLM393SoundDetectionModule.webp' : Sensor_microphone,
+    '17356190754369x6-Electret-Microphone_1024x1024@2x.webp' : Sensor_electret_microphone,
 
      //Motors
     '1735615365758SG90-Servo-Motor_1024x1024@2x.webp' : Motors_servo_motor,
