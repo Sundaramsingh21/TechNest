@@ -5,10 +5,10 @@ import nodemailer from 'nodemailer';
 
 
 //placing user order from frontend
-const sendEmail = async (items, address, amount) => {
+const sendEmail = async (items, amount,address, orderemail) => {
     try {
         
-        const email = address.email;
+        const email = orderemail;
         const Name = address.firstName;
 
         const transporter = nodemailer.createTransport({
@@ -88,7 +88,7 @@ const placeOrder = async (req, res) => {
         await newOrder.save();
         let a = await userModel.findByIdAndUpdate(req.body.userId, { cartData: {} });
 
-        await sendEmail(newOrder.items, req.body.address, newOrder.amount);
+        await sendEmail(newOrder.items, newOrder.amount,req.body.address ,req.body.address.email);
 
         // Send success response
         res.json({ success: true, message: "Order placed successfully" });
