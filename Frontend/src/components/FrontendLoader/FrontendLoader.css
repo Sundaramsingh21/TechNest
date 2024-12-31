@@ -25,7 +25,7 @@
     background-color: #a19e9e;
     margin: 8px 8px 1px 8px;
     border-radius: 15px 15px 0px 0px;
-    animation: glow 1.5s infinite;
+    animation: glow 1.3s infinite;
 }
 
 .frontend-details {
@@ -38,7 +38,7 @@
     height: 9px;
     background-color: #a19e9e;
     border-radius: 2px;
-    animation: glow 1.5s infinite;
+    animation: glow 1.3s infinite;
     
 }
 
@@ -48,7 +48,7 @@
     border-radius: 2px;
     background-color: #a19e9e;
     margin-top: 10px;
-    animation: glow 1.5s infinite;
+    animation: glow 1.3s infinite;
 }
 .frontend-details .price p {
     margin-top: 10px;
@@ -72,7 +72,7 @@
         margin-top: 20px;
     }
     .frontend-details .description p {
-        width: 150px;
+        width: 145px;
         height: 8px;
         background-color: #a19e9e;
         margin-top: 10px;
