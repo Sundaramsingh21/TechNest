@@ -30,7 +30,7 @@ const myOrders = () => {
     return (
         <div className='myorders'>
             <h2>My Order's</h2>
-            <p style={{ marginTop: "15px" }}>Once Order is Placed it also sent on your email.</p>
+            <p style={{ marginTop: "15px", fontSize :"13px"  }}>Order details also sent on your email. If not found also check spam folder.</p>
             <div className="container">
                 {Data.length === 0 && !LoaderO &&<center><p>No orders found.</p></center>}
                 {Data.map((order, index) => {
