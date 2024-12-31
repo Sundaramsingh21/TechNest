@@ -66,6 +66,7 @@ import Sensor_sound from './Sensors/1735618992049LM393-Sound-Sensor-Module_1024x
 import Sensor_microphone from './Sensors/1735619031977KYMicrophoneLM393SoundDetectionModule.webp'
 import Sensor_electret_microphone from './Sensors/17356190754369x6-Electret-Microphone_1024x1024@2x.webp'
 import Sensor_HeartPlus from './Sensors/1735618529285Heartbeat-sensor.webp'
+import Sensor_Reed_Switch_Module from './Sensors/1735626562897Ky025-Reed-Switch-Module_1024x1024@2x.webp'
 
 //Motors
 import Motors_servo_motor from './Motors/1735615365758SG90-Servo-Motor_1024x1024@2x.webp'
@@ -167,6 +168,7 @@ export const Items ={
     '1735618992049LM393-Sound-Sensor-Module_1024x1024@2x.webp' : Sensor_sound,
     '1735619031977KYMicrophoneLM393SoundDetectionModule.webp' : Sensor_microphone,
     '17356190754369x6-Electret-Microphone_1024x1024@2x.webp' : Sensor_electret_microphone,
+    '1735626562897Ky025-Reed-Switch-Module_1024x1024@2x.webp'  : Sensor_Reed_Switch_Module,
 
      //Motors
     '1735615365758SG90-Servo-Motor_1024x1024@2x.webp' : Motors_servo_motor,
