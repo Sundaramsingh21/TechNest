@@ -124,6 +124,17 @@ import didode_recitified from './Diodes/173562576238710A10-Rectifier-Diode_1024x
 import didode_zener_3_3v from './Diodes/17356258034661N4728A-diode_1024x1024@2x.webp'
 import didode_Trigger_Diode from './Diodes/1735625853032Trigger-Diode_1024x1024@2x.webp'
 
+//IOT & Wireless
+import iot_lora from './IOT & Wireless/1735624042058SX1278-LoRa-Module_1024x1024.webp'
+import iot_433mhz_TR from './IOT & Wireless/1735624120894RF-Transmitter-Receiver-Module_1024x1024@2x.webp'
+import iot_SMA_Antena from './IOT & Wireless/1735624156874RF-Transceiver-Module-with-SMA-Antenna_1024x1024@2x.webp'
+import iot_NRF24L01_RF from './IOT & Wireless/1735624194049NRF24L01-RF-module_1024x1024@2x.webp'
+import iot_433mhz_TR_Module from './IOT & Wireless/1735624230773RFTransmitterandReceiverWirelessModule-3_1024x1024@2x.webp'
+import iot_ai_thinker from './IOT & Wireless/1735624291172Ai-Thinker_1024x1024@2x.webp'
+import iot_hc12_s14463 from './IOT & Wireless/1735624747556HC12-SI4463-Wireless-Communication-Module_1024x1024@2x.webp'
+
+
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -264,6 +275,15 @@ export const Items ={
     '17356257294201N4740A-Zener-Diode_1024x1024.webp': didode_zener_10v,
     '173562576238710A10-Rectifier-Diode_1024x1024@2x.webp' : didode_recitified,
     '17356258034661N4728A-diode_1024x1024@2x.webp' : didode_zener_3_3v,
-    '1735625853032Trigger-Diode_1024x1024@2x.webp' : didode_Trigger_Diode
+    '1735625853032Trigger-Diode_1024x1024@2x.webp' : didode_Trigger_Diode,
+
+    //IOT & wireless
+    '1735624042058SX1278-LoRa-Module_1024x1024.webp' : iot_lora,
+    '1735624120894RF-Transmitter-Receiver-Module_1024x1024@2x.webp' : iot_433mhz_TR,
+    '1735624156874RF-Transceiver-Module-with-SMA-Antenna_1024x1024@2x.webp': iot_SMA_Antena,
+    '1735624194049NRF24L01-RF-module_1024x1024@2x.webp' : iot_NRF24L01_RF,
+    '1735624230773RFTransmitterandReceiverWirelessModule-3_1024x1024@2x.webp':iot_433mhz_TR_Module,
+    '1735624291172Ai-Thinker_1024x1024@2x.webp':iot_ai_thinker,
+    '1735624747556HC12-SI4463-Wireless-Communication-Module_1024x1024@2x.webp' : iot_hc12_s14463
 
 }
