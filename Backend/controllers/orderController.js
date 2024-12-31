@@ -51,6 +51,7 @@ const sendEmail = async (items, address, amount) => {
                 <p>Delivery charges :₹30 </p>
                 <p><strong>Total Amount:</strong> ₹${amount}/-</p>
                 <p>You can see your order status in Orders section.</p>
+                <p>Your order will be deliver within 4-7 days.</p>
                 <p>Thank you for shopping with us!</p><br/>
                 <p>TechNest Electronic Pvt.Ltd</p>
             `
