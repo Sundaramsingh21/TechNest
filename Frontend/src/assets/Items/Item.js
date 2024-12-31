@@ -44,6 +44,23 @@ import Sensor_Photoelectric from './Sensors/1735543192868LM393-Photoelectric-Sen
 import Sensor_Ultrasonic from './Sensors/1735543245004Ultrasonic-Sensor-Module-HC-SR04_1024x1024@2x.webp'
 import Sensor_pir from './Sensors/1735550715627pir_sensor.webp'
 
+//Motors
+import Motors_servo_motor from './Motors/1735615365758SG90-Servo-Motor_1024x1024@2x.webp'
+import Motors_geared from './Motors/1735615438893DC-Geared-Motor_1024x1024@2x.webp'
+import Motors_Submersible_Pump from './Motors/1735615485221Mini-DC-Submersible-Pump_1024x1024@2x.webp'
+import Motors_DC_motor from './Motors/17356155508543V-DC-Motor_1024x1024@2x.webp'
+import Motors_RS380_DC_motor from './Motors/1735615595903380-DC-Motor_1024x1024@2x.webp'
+import Motors_300_DC_Brushed_Motor from './Motors/1735615641292RF-300-DC-Brushed-Motor_1024x1024@2x.webp'
+import Motors_12V_Geared_DC_Motor from './Motors/173561569007710RPM-Geared-DC-Motor_24@2x.webp'
+import Motors_Stepper_Motor from './Motors/173561574985428BYJ-48-Stepper-Motor_1024x1024@2x.webp'
+import Motors_Stepper_Motor_4kg from './Motors/1735615814624Nema-17_Stepper_Motor_1024x1024@2x.webp'
+
+//Raspberry pi
+import Raspberrypi_4gb_ram from './Raspberry Pi Boards/1735616011982Raspberry-pi4-model-b-4gb_1024x1024.webp'
+import Raspberrypi_Pico_original from './Raspberry Pi Boards/1735616116149Raspberry-Pi-Pico_1024x1024@2x.webp'
+import Raspberrypi_zero_wireless from './Raspberry Pi Boards/1735616190627Raspberry-Pi-Zero-W_1024x1024.webp'
+import Raspberrypi_5mp_camera from './Raspberry Pi Boards/1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp'
+
 
 export const Items ={
     //LED
@@ -99,6 +116,23 @@ export const Items ={
     '1735543137516Light-Detection-Sensor-Module_1024x1024@2x.webp': Sensor_Light_Detection,
     '1735543192868LM393-Photoelectric-Sensor-Module_1024x1024@2x.webp' : Sensor_Photoelectric,
     '1735543245004Ultrasonic-Sensor-Module-HC-SR04_1024x1024@2x.webp' : Sensor_Ultrasonic,
-    '1735550715627pir_sensor.webp': Sensor_pir
+    '1735550715627pir_sensor.webp': Sensor_pir,
+
+     //Motors
+    '1735615365758SG90-Servo-Motor_1024x1024@2x.webp' : Motors_servo_motor,
+    '1735615438893DC-Geared-Motor_1024x1024@2x.webp' : Motors_geared,
+    '1735615485221Mini-DC-Submersible-Pump_1024x1024@2x.webp': Motors_Submersible_Pump,
+    '17356155508543V-DC-Motor_1024x1024@2x.webp': Motors_DC_motor,
+    '1735615595903380-DC-Motor_1024x1024@2x.webp': Motors_RS380_DC_motor,
+    '1735615641292RF-300-DC-Brushed-Motor_1024x1024@2x.webp':  Motors_300_DC_Brushed_Motor,
+    '173561569007710RPM-Geared-DC-Motor_24@2x.webp': Motors_12V_Geared_DC_Motor,
+    '173561574985428BYJ-48-Stepper-Motor_1024x1024@2x.webp': Motors_Stepper_Motor,
+    '1735615814624Nema-17_Stepper_Motor_1024x1024@2x.webp':  Motors_Stepper_Motor_4kg,
+
+    //Raspberry pi
+    '1735616011982Raspberry-pi4-model-b-4gb_1024x1024.webp' : Raspberrypi_4gb_ram,
+    '1735616116149Raspberry-Pi-Pico_1024x1024@2x.webp':  Raspberrypi_Pico_original,
+    '1735616190627Raspberry-Pi-Zero-W_1024x1024.webp' :  Raspberrypi_zero_wireless,
+    '1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp' : Raspberrypi_5mp_camera
 
 }
