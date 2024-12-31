@@ -85,6 +85,13 @@ import Raspberrypi_Pico_original from './Raspberry Pi Boards/1735616116149Raspbe
 import Raspberrypi_zero_wireless from './Raspberry Pi Boards/1735616190627Raspberry-Pi-Zero-W_1024x1024.webp'
 import Raspberrypi_5mp_camera from './Raspberry Pi Boards/1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp'
 
+//Wires
+import wires from './Wires/1735623402551Jumper-Wires-Combo_1024x1024@2x.webp'
+import wires_FF from './Wires/1735623547447female-to-female-jumper-wires_1024x1024@2x.webp'
+import wires_MF from './Wires/1735623446111male-to-female-jumper-wires_1024x1024@2x.webp'
+import wires_arduino_wire from './Wires/1735623656577Arduino-Programming-Cable_1024x1024@2x.webp'
+import wires_arduino_nano_wire from './Wires/1735623683219Arduino-Nano-Cabel.webp'
+import wires_micro_blue from './Wires/1735625215280USBtomicro-USBCableforRaspberryPi_1024x1024.webp'
 
 export const Items ={
     //LED
@@ -185,6 +192,14 @@ export const Items ={
     '1735616011982Raspberry-pi4-model-b-4gb_1024x1024.webp' : Raspberrypi_4gb_ram,
     '1735616116149Raspberry-Pi-Pico_1024x1024@2x.webp':  Raspberrypi_Pico_original,
     '1735616190627Raspberry-Pi-Zero-W_1024x1024.webp' :  Raspberrypi_zero_wireless,
-    '1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp' : Raspberrypi_5mp_camera
+    '1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp' : Raspberrypi_5mp_camera,
+
+    //Wires
+    '1735623402551Jumper-Wires-Combo_1024x1024@2x.webp' : wires,
+    '1735623446111male-to-female-jumper-wires_1024x1024@2x.webp' : wires_MF,
+    '1735623547447female-to-female-jumper-wires_1024x1024@2x.webp' : wires_FF,
+    '1735623656577Arduino-Programming-Cable_1024x1024@2x.webp' : wires_arduino_wire,
+    '1735623683219Arduino-Nano-Cabel.webp' : wires_arduino_nano_wire,
+    '1735625215280USBtomicro-USBCableforRaspberryPi_1024x1024.webp': wires_micro_blue
 
 }
