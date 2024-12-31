@@ -142,6 +142,12 @@ import esp_nodeMCU_ch340 from './Development Boards/1735623156235ESP8266-CH340-M
 import esp32s_board_transceiver from './Development Boards/1735623202248ESP8266-01-module_1024x1024@2x.webp'
 import esp32s_wifi_12f from './Development Boards/1735623247636ESP-12F-Wifi-module_1024x1024@2x.webp'
 
+//GSM & GPS
+import gsm_sim900 from './GSM & GPS/1735617116135SIM900-GSM-module.webp'
+import gsm_ne06mv2 from './GSM & GPS/1735617155194NEO6MV2-gps-module_1024x1024.webp'
+import gsm_sim800L from './GSM & GPS/1735617190610SIM800LGPRSGSMModule.webp'
+import gsm_sim800L_650 from './GSM & GPS/1735617246754SIM800L-GPRS-Module.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -300,6 +306,12 @@ export const Items ={
     '1735623119454ESP8266-NodeMCU-Board.webp': esp_nodeMCU,
     '1735623156235ESP8266-CH340-Module.webp': esp_nodeMCU_ch340,
     '1735623202248ESP8266-01-module_1024x1024@2x.webp' : esp32s_board_transceiver,
-    '1735623247636ESP-12F-Wifi-module_1024x1024@2x.webp': esp32s_wifi_12f
+    '1735623247636ESP-12F-Wifi-module_1024x1024@2x.webp': esp32s_wifi_12f,
+
+    //GSM & GPS
+    '1735617116135SIM900-GSM-module.webp': gsm_sim900,
+    '1735617155194NEO6MV2-gps-module_1024x1024.webp': gsm_ne06mv2,
+    '1735617190610SIM800LGPRSGSMModule.webp': gsm_sim800L,
+    '1735617246754SIM800L-GPRS-Module.webp' :gsm_sim800L_650
 
 }
