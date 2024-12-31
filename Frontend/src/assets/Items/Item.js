@@ -58,6 +58,7 @@ import Sensor_Finger_Print_521f32 from './Sensors/1735618893932GT-521F32-Fingerp
 import Sensor_sound from './Sensors/1735618992049LM393-Sound-Sensor-Module_1024x1024@2x.webp'
 import Sensor_microphone from './Sensors/1735619031977KYMicrophoneLM393SoundDetectionModule.webp'
 import Sensor_electret_microphone from './Sensors/17356190754369x6-Electret-Microphone_1024x1024@2x.webp'
+import Sensor_HeartPlus from './Sensors/1735618529285Heartbeat-sensor.webp'
 
 //Motors
 import Motors_servo_motor from './Motors/1735615365758SG90-Servo-Motor_1024x1024@2x.webp'
@@ -143,7 +144,7 @@ export const Items ={
     '1735617993340Rain-Drop-Sensor-Module24x1024@2x.webp' :Sensor_rain,
     '1735618048021IMG_4509_1024x1024@2x.webp' : Sensor_Capacitive_moisture,
     '1735618458643MAX3010030102-HeartRate-Oxygen-Pulse-Sensor.webp' :Sensor_HeartRate,
-    '1735618529285Heartbeat-sensor.webp': Sensor_HeartRate,
+    '1735618529285Heartbeat-sensor.webp': Sensor_HeartPlus,
     '1735618764845AD8232-ECG-Heart-Rate-Monitor-Sensor-Module.webp': Sensor_ecg,
     '1735618833896Finger-Print-Sensor-Module_1024x1024@2x.webp' :Sensor_Finger_Print,
     '1735618893932GT-521F32-Fingerprint-Sensor-Module_1024x1024@2x.webp' :Sensor_Finger_Print_521f32,
