@@ -93,6 +93,13 @@ import wires_arduino_wire from './Wires/1735623656577Arduino-Programming-Cable_1
 import wires_arduino_nano_wire from './Wires/1735623683219Arduino-Nano-Cabel.webp'
 import wires_micro_blue from './Wires/1735625215280USBtomicro-USBCableforRaspberryPi_1024x1024.webp'
 
+//Switch
+import Switch_Push_Button from './Switches/1735625275260Push-Button-On-Off-Switch-2A-250V_1024x1024@2x.webp'
+import switch_Mini_Push_Button from './Switches/1735625326770DPDT-Mini-Push-Button_1024x1024@2x.webp'
+import switch_Bump from './Switches/1735625370280Bump-switch_1024x1024.webp'
+import switch_2pin from './Switches/1735625413125Push-Button-_2-Pin-Tactile-Micro-Switch_1024x1024@2x.webp'
+import switch_4pin from './Switches/1735625449139Push-Button.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -200,6 +207,13 @@ export const Items ={
     '1735623547447female-to-female-jumper-wires_1024x1024@2x.webp' : wires_FF,
     '1735623656577Arduino-Programming-Cable_1024x1024@2x.webp' : wires_arduino_wire,
     '1735623683219Arduino-Nano-Cabel.webp' : wires_arduino_nano_wire,
-    '1735625215280USBtomicro-USBCableforRaspberryPi_1024x1024.webp': wires_micro_blue
+    '1735625215280USBtomicro-USBCableforRaspberryPi_1024x1024.webp': wires_micro_blue,
+
+     //Switchs
+    '1735625275260Push-Button-On-Off-Switch-2A-250V_1024x1024@2x.webp' : Switch_Push_Button,
+    '1735625326770DPDT-Mini-Push-Button_1024x1024@2x.webp' : switch_Mini_Push_Button,
+    '1735625370280Bump-switch_1024x1024.webp' : switch_Bump,
+    '1735625413125Push-Button-_2-Pin-Tactile-Micro-Switch_1024x1024@2x.webp' : switch_2pin,
+    '1735625449139Push-Button.webp' : switch_4pin
 
 }
