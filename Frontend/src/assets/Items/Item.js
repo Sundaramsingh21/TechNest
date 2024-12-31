@@ -100,6 +100,21 @@ import switch_Bump from './Switches/1735625370280Bump-switch_1024x1024.webp'
 import switch_2pin from './Switches/1735625413125Push-Button-_2-Pin-Tactile-Micro-Switch_1024x1024@2x.webp'
 import switch_4pin from './Switches/1735625449139Push-Button.webp'
 
+//Transistors
+import transistor_NChannel_MOSFET from './Transistors/1735621992292IRFZ44-MOSFET.webp'
+import transistor_PChannel_MOSFET from './Transistors/1735622024839IRF9540N-MOSFET_1024x1024.webp'
+import transistor_NChannel540_MOSFET from './Transistors/1735622056783IRF540-MOSFET_1024x1024.webp'
+import transistor_NChannelP_MOSFET from './Transistors/1735622096729IRFP250N-N-Channel-Power-MOSFET_1024x1024@2x.webp'
+import transistor_NPN_power from './Transistors/1735622141960BD139_1024x1024@2x.webp'
+import transistor_d140 from './Transistors/1735622185150BD140-transistor_1024x1024@2x.webp'
+import transistor_f06_NChannel from './Transistors/1735622248404STP55NF06-N-Channel-MOSFET.webp'
+import transistor_205_MOSFET from './Transistors/1735622319032IRF3205-MOSFET_1_1024x1024.webp'
+import transistor_2N7000_MOSFET from './Transistors/17356223603542n7000_1024x1024@2x.webp'
+import transistor_BS170_NChannel from './Transistors/1735622397028BS170-MOSFET_1024x1024@2x.webp'
+import transistor_triac_bt136 from './Transistors/1735622447236BT136-TRIAC.webp'
+import transistor_bta16_triac from './Transistors/1735622505577BTA16-TRIAC.webp'
+import transistor_bta139_triac from './Transistors/1735622579807BTA139-TRIAC_1024x1024@2x.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -214,6 +229,21 @@ export const Items ={
     '1735625326770DPDT-Mini-Push-Button_1024x1024@2x.webp' : switch_Mini_Push_Button,
     '1735625370280Bump-switch_1024x1024.webp' : switch_Bump,
     '1735625413125Push-Button-_2-Pin-Tactile-Micro-Switch_1024x1024@2x.webp' : switch_2pin,
-    '1735625449139Push-Button.webp' : switch_4pin
+    '1735625449139Push-Button.webp' : switch_4pin,
+
+     //Transistors
+    '1735621992292IRFZ44-MOSFET.webp' : transistor_NChannel_MOSFET,
+    '1735622024839IRF9540N-MOSFET_1024x1024.webp' : transistor_PChannel_MOSFET,
+    '1735622056783IRF540-MOSFET_1024x1024.webp': transistor_NChannel540_MOSFET,
+    '1735622096729IRFP250N-N-Channel-Power-MOSFET_1024x1024@2x.webp' : transistor_NChannelP_MOSFET,
+    '1735622141960BD139_1024x1024@2x.webp' : transistor_NPN_power,
+    '1735622185150BD140-transistor_1024x1024@2x.webp' : transistor_d140,
+    '1735622248404STP55NF06-N-Channel-MOSFET.webp' : transistor_f06_NChannel,
+    '1735622319032IRF3205-MOSFET_1_1024x1024.webp' : transistor_205_MOSFET,
+    '17356223603542n7000_1024x1024@2x.webp' : transistor_2N7000_MOSFET ,
+    '1735622397028BS170-MOSFET_1024x1024@2x.webp' : transistor_BS170_NChannel,
+    '1735622447236BT136-TRIAC.webp' : transistor_triac_bt136,
+    '1735622505577BTA16-TRIAC.webp' : transistor_bta16_triac,
+    '1735622579807BTA139-TRIAC_1024x1024@2x.webp' : transistor_bta139_triac
 
 }
