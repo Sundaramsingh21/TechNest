@@ -15,12 +15,12 @@ const foodDisplay = ({ category, searchquery }) => {
   const filteredlist = food_list.filter(item => {
     const queryWords = searchquery.toLowerCase().split(/\s+/); 
     const name = item.name.toLowerCase();
-    const description = item.description ? item.description.toLowerCase() : "";
+    // const description = item.description ? item.description.toLowerCase() : "";
     const category = item.category ? item.category.toLowerCase() : "";
     const id = item._id.toLowerCase();
     return (
       searchquery === "" ||
-      queryWords.some(word => name.includes(word) || description.includes(word) || category.includes(word) || id.includes(word))
+      queryWords.some(word => name.includes(word) || category.includes(word) || id.includes(word))
     );
   });
 
