@@ -115,6 +115,15 @@ import transistor_triac_bt136 from './Transistors/1735622447236BT136-TRIAC.webp'
 import transistor_bta16_triac from './Transistors/1735622505577BTA16-TRIAC.webp'
 import transistor_bta139_triac from './Transistors/1735622579807BTA139-TRIAC_1024x1024@2x.webp'
 
+//Diodes
+import diode_1n4007 from './Diodes/17356255253491N4007_1024x1024@2x.webp'
+import diode_1n5408 from './Diodes/17356256223481N5408-Diode_1024x1024@2x.webp'
+import didode_zener from './Diodes/17356256560181N4733A-diode_1024x1024@2x.webp'
+import didode_zener_10v from'./Diodes/17356257294201N4740A-Zener-Diode_1024x1024.webp'
+import didode_recitified from './Diodes/173562576238710A10-Rectifier-Diode_1024x1024@2x.webp'
+import didode_zener_3_3v from './Diodes/17356258034661N4728A-diode_1024x1024@2x.webp'
+import didode_Trigger_Diode from './Diodes/1735625853032Trigger-Diode_1024x1024@2x.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -244,6 +253,17 @@ export const Items ={
     '1735622397028BS170-MOSFET_1024x1024@2x.webp' : transistor_BS170_NChannel,
     '1735622447236BT136-TRIAC.webp' : transistor_triac_bt136,
     '1735622505577BTA16-TRIAC.webp' : transistor_bta16_triac,
-    '1735622579807BTA139-TRIAC_1024x1024@2x.webp' : transistor_bta139_triac
+    '1735622579807BTA139-TRIAC_1024x1024@2x.webp' : transistor_bta139_triac,
+
+     //Diodes
+    '17356255253491N4007_1024x1024@2x.webp' : diode_1n4007,
+    '1735625569883IMG_3024x1024@2x.webp' : diode_1n4007,
+    '17356256223481N5408-Diode_1024x1024@2x.webp' : diode_1n5408,
+    '17356256560181N4733A-diode_1024x1024@2x.webp' : didode_zener,
+    '17356257008921N4743A12V-Zener-Diode_1024x1024@2x.webp': didode_zener,
+    '17356257294201N4740A-Zener-Diode_1024x1024.webp': didode_zener_10v,
+    '173562576238710A10-Rectifier-Diode_1024x1024@2x.webp' : didode_recitified,
+    '17356258034661N4728A-diode_1024x1024@2x.webp' : didode_zener_3_3v,
+    '1735625853032Trigger-Diode_1024x1024@2x.webp' : didode_Trigger_Diode
 
 }
