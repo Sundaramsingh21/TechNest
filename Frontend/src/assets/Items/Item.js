@@ -38,6 +38,9 @@ import Arduino_ATmega328p from './Ardunio_boards/1735274663391Arduino-Uno_1_1024
 import Arduino__nano_ATmega328p from './Ardunio_boards/1735274718162ArduinoNanoV3.0Soldered_WithoutCable.jpg'
 import Arduino__nanonext_ATmega328p from './Ardunio_boards/1735274773300Arduino-Nano_1024x1024x.jpg'
 import Arduino_uno_clone from './Ardunio_boards/1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp'
+import Arduino_Leonard from './Ardunio_boards/1735618683438Arduino-Leonard.webp'
+import Ardino_mega from './Ardunio_boards/1735618713740Arduino-Mega-2560-R3-_WithoutCable.webp'
+import Ardino_promini from './Ardunio_boards/1735621901269Arduino-Pro.webp'
 
 //Sensors
 import Sensor_Colour_Sensor from './Sensors/1735542919025TCS3200-Based-Colour-Sensor-Module_1024x1024.webp'
@@ -134,6 +137,9 @@ export const Items ={
     '1735274718162ArduinoNanoV3.0Soldered_WithoutCable.jpg' :Arduino__nano_ATmega328p,
     '1735274773300Arduino-Nano_1024x1024x.jpg' : Arduino__nanonext_ATmega328p,
     '1735274889996Arduino-uno-clone-compatible-DIP_1024x1024@2x.webp' : Arduino_uno_clone,
+    '1735618683438Arduino-Leonard.webp': Arduino_Leonard,
+    '1735618713740Arduino-Mega-2560-R3-_WithoutCable.webp': Ardino_mega,
+    '1735621901269Arduino-Pro.webp' : Ardino_promini,
 
     //Sensors
     '1735542919025TCS3200-Based-Colour-Sensor-Module_1024x1024.webp': Sensor_Colour_Sensor,
