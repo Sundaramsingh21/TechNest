@@ -84,6 +84,7 @@ import Raspberrypi_4gb_ram from './Raspberry Pi Boards/1735616011982Raspberry-pi
 import Raspberrypi_Pico_original from './Raspberry Pi Boards/1735616116149Raspberry-Pi-Pico_1024x1024@2x.webp'
 import Raspberrypi_zero_wireless from './Raspberry Pi Boards/1735616190627Raspberry-Pi-Zero-W_1024x1024.webp'
 import Raspberrypi_5mp_camera from './Raspberry Pi Boards/1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp'
+import Raspberrypi_3 from './Raspberry Pi Boards/1735627251725Screenshot 2024-12-31 115926.webp'
 
 //Wires
 import wires from './Wires/1735623402551Jumper-Wires-Combo_1024x1024@2x.webp'
@@ -256,6 +257,8 @@ export const Items ={
     '1735616116149Raspberry-Pi-Pico_1024x1024@2x.webp':  Raspberrypi_Pico_original,
     '1735616190627Raspberry-Pi-Zero-W_1024x1024.webp' :  Raspberrypi_zero_wireless,
     '1735616364829Raspberry-Pi-5MP-Camera-Module_1024x1024.webp' : Raspberrypi_5mp_camera,
+    '1735627158958Screenshot 2024-12-31 115801.webp' : Raspberrypi_Pico_original,
+    '1735627251725Screenshot 2024-12-31 115926.webp' : Raspberrypi_3,
 
     //Wires
     '1735623402551Jumper-Wires-Combo_1024x1024@2x.webp' : wires,
