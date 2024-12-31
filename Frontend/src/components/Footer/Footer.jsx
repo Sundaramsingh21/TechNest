@@ -10,7 +10,7 @@ const Footer = () => {
 
                     <img className="logo" src={assets.logo} alt="" />
 
-                    <p>TechNest is trusted by 50,000+ happy customers. we Provide all types of enginnerig projects here and electonic components in cheapest price than others. </p>
+                    <p>TechNest is trusted by 500+ happy customers. we Provide all types of enginnerig projects here and electonic components in cheapest price than others. </p>
                     <div className="footer-social-icons">
                         <img src={assets.facebook_icon} alt="" />
                         <img src={assets.twitter_icon} alt="" />
