@@ -133,7 +133,14 @@ import iot_433mhz_TR_Module from './IOT & Wireless/1735624230773RFTransmitterand
 import iot_ai_thinker from './IOT & Wireless/1735624291172Ai-Thinker_1024x1024@2x.webp'
 import iot_hc12_s14463 from './IOT & Wireless/1735624747556HC12-SI4463-Wireless-Communication-Module_1024x1024@2x.webp'
 
-
+//Development boards
+import esp32_camera from './Development Boards/1735622977315ESP32CameraDevelopmentBoardWiFi.webp'
+import esp32s_board from './Development Boards/1735623025127ESP32S-Development-Board_1024x1024@2x.webp'
+import esp_wroom from './Development Boards/1735623054257ESP32-WROOM-32-MCUModule_1024x1024.webp'
+import esp_nodeMCU from './Development Boards/1735623119454ESP8266-NodeMCU-Board.webp'
+import esp_nodeMCU_ch340 from './Development Boards/1735623156235ESP8266-CH340-Module.webp'
+import esp32s_board_transceiver from './Development Boards/1735623202248ESP8266-01-module_1024x1024@2x.webp'
+import esp32s_wifi_12f from './Development Boards/1735623247636ESP-12F-Wifi-module_1024x1024@2x.webp'
 
 export const Items ={
     //LED
@@ -284,6 +291,15 @@ export const Items ={
     '1735624194049NRF24L01-RF-module_1024x1024@2x.webp' : iot_NRF24L01_RF,
     '1735624230773RFTransmitterandReceiverWirelessModule-3_1024x1024@2x.webp':iot_433mhz_TR_Module,
     '1735624291172Ai-Thinker_1024x1024@2x.webp':iot_ai_thinker,
-    '1735624747556HC12-SI4463-Wireless-Communication-Module_1024x1024@2x.webp' : iot_hc12_s14463
+    '1735624747556HC12-SI4463-Wireless-Communication-Module_1024x1024@2x.webp' : iot_hc12_s14463,
+
+    //Development boards
+    '1735622977315ESP32CameraDevelopmentBoardWiFi.webp': esp32_camera,
+    '1735623025127ESP32S-Development-Board_1024x1024@2x.webp': esp32s_board,
+    '1735623054257ESP32-WROOM-32-MCUModule_1024x1024.webp' : esp_wroom,
+    '1735623119454ESP8266-NodeMCU-Board.webp': esp_nodeMCU,
+    '1735623156235ESP8266-CH340-Module.webp': esp_nodeMCU_ch340,
+    '1735623202248ESP8266-01-module_1024x1024@2x.webp' : esp32s_board_transceiver,
+    '1735623247636ESP-12F-Wifi-module_1024x1024@2x.webp': esp32s_wifi_12f
 
 }
