@@ -157,6 +157,14 @@ import battery_2200mAh from './Battery/173562276321818650-Li-ion-2200mAh-Recharg
 import battery_2000mAh_original from './Battery/173562280310618650-Li-ion-Rechargeable-Battery.webp'
 import battery_2600mAh from './Battery/173562285114218650-Li-ion-2600mAh-Battery.webp'
 
+//PCB Boards
+import pcb_2_3 from './PCB Boards/1735625934471Perf-Board-for-PCB_1024x1024@2x.webp'
+import pcb_15_10 from './PCB Boards/1735625974161Perf-board_1024x1024@2x.webp'
+import pcb_40pin from './PCB Boards/173562601123740-Pin-Straight-Female-Header-Pins.webp'
+import pcb_40pin_male from './PCB Boards/173562603935540-Pin-Straight-Male-Header-Pins_1024x1024.webp'
+import pcb_fr4_copper from './PCB Boards/1735626077712FR4-Copper-Clad-Plate-Laminated_1024x1024@2x.webp'
+import pcb_etching from './PCB Boards/1735626201381th.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -331,6 +339,14 @@ export const Items ={
     '1735622715962Hongli-18650-Li-ion-2500mAh-Battery_1024x1024.webp': battery_2500mAh,
     '173562276321818650-Li-ion-2200mAh-Rechargeable-Battery-Copy.webp' : battery_2200mAh,
     '173562280310618650-Li-ion-Rechargeable-Battery.webp': battery_2000mAh_original,
-    '173562285114218650-Li-ion-2600mAh-Battery.webp' : battery_2600mAh
+    '173562285114218650-Li-ion-2600mAh-Battery.webp' : battery_2600mAh,
+
+    //PCB Boards
+    '1735625934471Perf-Board-for-PCB_1024x1024@2x.webp' : pcb_2_3,
+    '1735625974161Perf-board_1024x1024@2x.webp' : pcb_15_10,
+    '173562601123740-Pin-Straight-Female-Header-Pins.webp' : pcb_40pin,
+    '173562603935540-Pin-Straight-Male-Header-Pins_1024x1024.webp' : pcb_40pin_male,
+    '1735626077712FR4-Copper-Clad-Plate-Laminated_1024x1024@2x.webp' : pcb_fr4_copper,
+    '1735626201381th.webp' : pcb_etching
 
 }
