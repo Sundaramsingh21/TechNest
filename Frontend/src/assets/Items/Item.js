@@ -185,6 +185,10 @@ import programmer_pic from './Programmers/1735623349348IMG_4054_1024x1024@2x.web
 import programmer_pickit3 from './Programmers/1735626308929PICKIT2-PROGRAMMER-KIT.webp'
 import programmer_8051 from './Programmers/17356264690358051-and-avr-usb-isp-programmer-781.webp'
 
+//Transformer
+import transformer_12v from './Transformers/1735626749983619g6nG3eUL._SL1500_.webp'
+import transformer_12v_2A from './Transformers/173562692102761PGYmUXvVL._SL1000_.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -387,7 +391,11 @@ export const Items ={
     '1735623305452USB-ASP-Programmer_1024x1024@2x.webp' : programmer_LC_01,
     '1735623349348IMG_4054_1024x1024@2x.webp' : programmer_pic,
     '1735626308929PICKIT2-PROGRAMMER-KIT.webp': programmer_pickit3,
-    '17356264690358051-and-avr-usb-isp-programmer-781.webp' : programmer_8051
+    '17356264690358051-and-avr-usb-isp-programmer-781.webp' : programmer_8051,
+
+    //Transformer
+    '1735626749983619g6nG3eUL._SL1500_.webp' : transformer_12v,
+    '173562692102761PGYmUXvVL._SL1000_.webp' : transformer_12v_2A
     
 
 }
