@@ -3,6 +3,7 @@ import './cart.css'
 import { useContext } from 'react'
 import { StoreContext } from '../../Context/StoreContext'
 import {useNavigate} from 'react-router-dom'
+import { Items } from '../../assets/Items/Item'
 const cart = () => {
 
   const { cartItems, food_list, RemoveFromCart, getTotalCartAmount,url } = useContext(StoreContext)
@@ -26,7 +27,7 @@ const cart = () => {
             return (
               <div key={index}>
                 <div  className="cart-items-title cart-items-item">
-                  <img src={url+"/images/"+item.image} alt="" />
+                  <img src={Items[item.image]} alt="" />
                   <p>{item.name}</p>
                   <p>₹{item.price}</p>
                   <p className='not-allowed'>{cartItems[item._id]}</p>
