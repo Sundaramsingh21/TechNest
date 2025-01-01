@@ -165,6 +165,20 @@ import pcb_40pin_male from './PCB Boards/173562603935540-Pin-Straight-Male-Heade
 import pcb_fr4_copper from './PCB Boards/1735626077712FR4-Copper-Clad-Plate-Laminated_1024x1024@2x.webp'
 import pcb_etching from './PCB Boards/1735626201381th.webp'
 
+//Display
+import LCD_display from './Display/173561643757916x2-LCD-Display-Green_1024x1024@2x.webp'
+import LCD_display_blue from './Display/173561647659016x2LCDDisplay_BlueBacklight.webp'
+import LCD_display_IC2 from './Display/1735616515229I2C-Serial-Interface-LCD-Adapter-Module_1024x1024@2x.webp'
+import LCD_OLED from './Display/1735616578167OLED-Display-0.96-Inch-I2C-Interface.webp'
+import LCD_OLED_7pin from './Display/1735616617289SSD1306-oled-display_1_1024x1024@2x.webp'
+import LCD_7segment_A from './Display/17356166633247-Segment-Display_1024x1024.webp'
+import LCD_7segment_C from './Display/17356167026087-segment-display-common-cathode.webp'
+import LCD_Ameter_display from './Display/1735616774268100V-10A-Dual-LED-Voltmeter-Ammeter-Monitor-Panel.webp'
+import LCD_0_36inch from './Display/17356168364520.36-Inch-Three-Wire-DC-Voltmeter.webp'
+import LCD_TFT_display from './Display/1735616925190TFT-Touchscreen_1024x1024@2x.webp'
+import LCD_raspberry from './Display/17356169651993.5inchTFT-Touchscreen-Display_1024x1024@2x.webp'
+import LCD_thermometer from './Display/1735617025286DigitalLCDThermometerModule_1024x1024@2x.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -347,6 +361,20 @@ export const Items ={
     '173562601123740-Pin-Straight-Female-Header-Pins.webp' : pcb_40pin,
     '173562603935540-Pin-Straight-Male-Header-Pins_1024x1024.webp' : pcb_40pin_male,
     '1735626077712FR4-Copper-Clad-Plate-Laminated_1024x1024@2x.webp' : pcb_fr4_copper,
-    '1735626201381th.webp' : pcb_etching
+    '1735626201381th.webp' : pcb_etching,
+
+    //Display
+    '173561643757916x2-LCD-Display-Green_1024x1024@2x.webp' : LCD_display,
+    '173561647659016x2LCDDisplay_BlueBacklight.webp' : LCD_display_blue,
+    '1735616515229I2C-Serial-Interface-LCD-Adapter-Module_1024x1024@2x.webp' : LCD_display_IC2,
+    '1735616578167OLED-Display-0.96-Inch-I2C-Interface.webp' : LCD_OLED,
+    '1735616617289SSD1306-oled-display_1_1024x1024@2x.webp' : LCD_OLED_7pin,
+    '17356166633247-Segment-Display_1024x1024.webp' : LCD_7segment_A,
+    '17356167026087-segment-display-common-cathode.webp' : LCD_7segment_C,
+    '1735616774268100V-10A-Dual-LED-Voltmeter-Ammeter-Monitor-Panel.webp' : LCD_Ameter_display,
+    '17356168364520.36-Inch-Three-Wire-DC-Voltmeter.webp' : LCD_0_36inch,
+    '1735616925190TFT-Touchscreen_1024x1024@2x.webp' : LCD_TFT_display,
+    '17356169651993.5inchTFT-Touchscreen-Display_1024x1024@2x.webp' : LCD_raspberry,
+    '1735617025286DigitalLCDThermometerModule_1024x1024@2x.webp' : LCD_thermometer
 
 }
