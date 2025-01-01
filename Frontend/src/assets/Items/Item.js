@@ -179,6 +179,12 @@ import LCD_TFT_display from './Display/1735616925190TFT-Touchscreen_1024x1024@2x
 import LCD_raspberry from './Display/17356169651993.5inchTFT-Touchscreen-Display_1024x1024@2x.webp'
 import LCD_thermometer from './Display/1735617025286DigitalLCDThermometerModule_1024x1024@2x.webp'
 
+//Programmer
+import programmer_LC_01 from './Programmers/1735623305452USB-ASP-Programmer_1024x1024@2x.webp'
+import programmer_pic from './Programmers/1735623349348IMG_4054_1024x1024@2x.webp'
+import programmer_pickit3 from './Programmers/1735626308929PICKIT2-PROGRAMMER-KIT.webp'
+import programmer_8051 from './Programmers/17356264690358051-and-avr-usb-isp-programmer-781.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -375,6 +381,13 @@ export const Items ={
     '17356168364520.36-Inch-Three-Wire-DC-Voltmeter.webp' : LCD_0_36inch,
     '1735616925190TFT-Touchscreen_1024x1024@2x.webp' : LCD_TFT_display,
     '17356169651993.5inchTFT-Touchscreen-Display_1024x1024@2x.webp' : LCD_raspberry,
-    '1735617025286DigitalLCDThermometerModule_1024x1024@2x.webp' : LCD_thermometer
+    '1735617025286DigitalLCDThermometerModule_1024x1024@2x.webp' : LCD_thermometer,
+
+    //programmer
+    '1735623305452USB-ASP-Programmer_1024x1024@2x.webp' : programmer_LC_01,
+    '1735623349348IMG_4054_1024x1024@2x.webp' : programmer_pic,
+    '1735626308929PICKIT2-PROGRAMMER-KIT.webp': programmer_pickit3,
+    '17356264690358051-and-avr-usb-isp-programmer-781.webp' : programmer_8051
+    
 
 }
