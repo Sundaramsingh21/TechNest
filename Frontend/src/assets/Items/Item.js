@@ -32,6 +32,7 @@ import Resistor_NTC_Thermistor from '../Items/Resistors/1735619133758NTC-Thermis
 import Resistor_Variable_Resistor from '../Items/Resistors/1735619177720Variable-Resistor-Trimpot-Trimmer.webp'
 import Resistor_KPresentPotentiometer from '../Items/Resistors/1735619364377100KPresentPotentiometerTrimmerTrimpot.webp'
 import Resistor_1K_Ohm_Preset from '../Items/Resistors/17356195401161K-Ohm-Preset-Potentiometer_1024x1024@2x.webp'
+import Resistor_LDR from '../Items/Resistors/1735640163550273_1_1024x1024@2x.webp'
 
 //Arduino boards
 import Arduino_ATmega328p from './Ardunio_boards/1735274663391Arduino-Uno_1_1024x1024@2x.jpg'
@@ -271,6 +272,7 @@ export const Items ={
     '1735619272157Variable-Resistor-Trimpot-Trimmer.webp' : Resistor_Variable_Resistor,
     '1735619364377100KPresentPotentiometerTrimmerTrimpot.webp' : Resistor_KPresentPotentiometer,
     '17356195401161K-Ohm-Preset-Potentiometer_1024x1024@2x.webp': Resistor_1K_Ohm_Preset,
+    '1735640163550273_1_1024x1024@2x.webp' : Resistor_LDR,
 
     //Arduino boards
     '1735274663391Arduino-Uno_1_1024x1024@2x.jpg' : Arduino_ATmega328p,
