@@ -189,6 +189,42 @@ import programmer_8051 from './Programmers/17356264690358051-and-avr-usb-isp-pro
 import transformer_12v from './Transformers/1735626749983619g6nG3eUL._SL1500_.webp'
 import transformer_12v_2A from './Transformers/173562692102761PGYmUXvVL._SL1000_.webp'
 
+//IC
+import ic_555timer from './IC/1735619619436555-Timer-IC.webp'
+import ic_opamp from './IC/1735619690257LM358-IC_1024x1024@2x.webp'
+import ic_LM324 from './IC/1735619733375LM324-IC_6bd44bea.webp'
+import ic_uln2803 from './IC/1735619774194ULN2003-Darlington-Array-IC.webp'
+import ic_LM741 from './IC/1735619842616LM741_1024x1024.webp'
+import ic_cd4017 from './IC/1735619967048IMG_0523_1024x1024@2x.webp'
+import ic_cf4017 from './IC/1735620004198CD4047_1024x1024@2x.webp'
+import ic_cd4011 from './IC/1735620046268CD4011-IC_1024x1024@2x.webp'
+import ic_cd4052 from './IC/1735620129301CD4052-Multiplexer-IC_1024x1024@2x.webp'
+import ic_cd4001 from './IC/1735620179909CD4001_1024x1024@2x.webp'
+import ic_cd4060 from './IC/1735620437279CD4060-IC_1024x1024@2x.webp'
+import ic_cd4013 from './IC/1735620486898CD4013-IC_1024x1024@2x.webp'
+import ic_74hc595 from './IC/173562052468474HC595-IC_1024x1024@2x.webp'
+import ic_74hc595N from './IC/1735620562440.webp'
+import ic_16pinDIP from './IC/1735620591927IMG_6777_1024x1024@2x.webp'
+import ic_8pinDIP from './IC/17356206179598-pin-dip-ic-socket_1024x1024@2x.webp'
+import ic_14pinDIP from './IC/173562065002114-Pin-IC-Base.webp'
+import ic_40pinDIP from './IC/1735620689522IMG_6757_1024x1024@2x.webp'
+import ic_74HC194 from './IC/173562079032274HC194N-Resistor_1024x1024@2x.webp'
+import ic_ht12d from './IC/1735620838125HT12D_RFDecoder_1024x1024@2x.webp'
+import ic_CD4060 from './IC/1735620895108CD4040_1024x1024@2x.webp'
+import ic_HT12E from './IC/1735620941132HT12E-RF-Encoder_1024x1024@2x.webp'
+import ic_74LS06 from './IC/173562099599874LS06-IC_1024x1024@2x.webp'
+import ic_CD4093 from './IC/1735621033499CD4093-IC_1024x1024@2x.webp'
+import ic_EL817C from './IC/1735621069925EL817C-IC_1024x1024@2x.webp'
+import ic_MCT2E from './IC/1735621107399MCT2E-Optocoupler.webp'
+import ic_MOC3021 from './IC/1735621146158MOC3021.webp'
+import ic_MOC3063 from './IC/1735621179733MOC3063-IC_1_1024x1024@2x.webp'
+import ic_ATTINY85 from './IC/1735621340887ATTINY85-microcontroller_1024x1024.webp'
+import ic_ATmega from './IC/1735621393206ATmega8A-Microcontroller.webp'
+import ic_ATmega_PU from './IC/1735621433303ATmega328PMicrocontroller.webp'
+import ic_ATmega_8051 from './IC/1735621464306AT89C51AT89S52-8051Microcontroller.webp'
+import ic_ATmega_pic from './IC/1735621516765PIC16F877A-Microcontroller.webp'
+import ic_ATmega_pic_8bit from './IC/1735621555337PIC18F4520-Microcontroller_1024x1024@2x.webp'
+
 export const Items ={
     //LED
     '1734948073607-green.png' : green_LED,
@@ -395,7 +431,43 @@ export const Items ={
 
     //Transformer
     '1735626749983619g6nG3eUL._SL1500_.webp' : transformer_12v,
-    '173562692102761PGYmUXvVL._SL1000_.webp' : transformer_12v_2A
+    '173562692102761PGYmUXvVL._SL1000_.webp' : transformer_12v_2A,
+
+    //IC
+    '1735619619436555-Timer-IC.webp' : ic_555timer,
+    '1735619690257LM358-IC_1024x1024@2x.webp' : ic_opamp,
+    '1735619733375LM324-IC_6bd44bea.webp' : ic_LM324,
+    '1735619774194ULN2003-Darlington-Array-IC.webp' : ic_uln2803,
+    '1735619842616LM741_1024x1024.webp' : ic_LM741,
+    '1735619967048IMG_0523_1024x1024@2x.webp' : ic_cd4017,
+    '1735620004198CD4047_1024x1024@2x.webp' : ic_cf4017,
+    '1735620046268CD4011-IC_1024x1024@2x.webp' : ic_cd4011,
+    '1735620129301CD4052-Multiplexer-IC_1024x1024@2x.webp' : ic_cd4052,
+    '1735620179909CD4001_1024x1024@2x.webp' : ic_cd4001,
+    '1735620437279CD4060-IC_1024x1024@2x.webp' : ic_cd4060,
+    '1735620486898CD4013-IC_1024x1024@2x.webp' : ic_cd4013,
+    '173562052468474HC595-IC_1024x1024@2x.webp' : ic_74hc595,
+    '1735620562440.webp': ic_74hc595N,
+    '1735620591927IMG_6777_1024x1024@2x.webp' : ic_16pinDIP,
+    '17356206179598-pin-dip-ic-socket_1024x1024@2x.webp' : ic_8pinDIP,
+    '173562065002114-Pin-IC-Base.webp' : ic_14pinDIP,
+    '1735620689522IMG_6757_1024x1024@2x.webp' : ic_40pinDIP,
+    '173562079032274HC194N-Resistor_1024x1024@2x.webp' : ic_74HC194,
+    '1735620838125HT12D_RFDecoder_1024x1024@2x.webp' : ic_ht12d,
+    '1735620895108CD4040_1024x1024@2x.webp' : ic_CD4060,
+    '1735620941132HT12E-RF-Encoder_1024x1024@2x.webp' : ic_HT12E,
+    '173562099599874LS06-IC_1024x1024@2x.webp' : ic_74LS06,
+    '1735621033499CD4093-IC_1024x1024@2x.webp' : ic_CD4093,
+    '1735621069925EL817C-IC_1024x1024@2x.webp' : ic_EL817C,
+    '1735621107399MCT2E-Optocoupler.webp' : ic_MCT2E,
+    '1735621146158MOC3021.webp' : ic_MOC3021,
+    '1735621179733MOC3063-IC_1_1024x1024@2x.webp' :ic_MOC3063,
+    '1735621340887ATTINY85-microcontroller_1024x1024.webp' : ic_ATTINY85,
+    '1735621393206ATmega8A-Microcontroller.webp' : ic_ATmega,
+    '1735621433303ATmega328PMicrocontroller.webp': ic_ATmega_PU,
+    '1735621464306AT89C51AT89S52-8051Microcontroller.webp' : ic_ATmega_8051,
+    '1735621516765PIC16F877A-Microcontroller.webp' : ic_ATmega_pic,
+    '1735621555337PIC18F4520-Microcontroller_1024x1024@2x.webp' : ic_ATmega_pic_8bit
     
 
 }
