@@ -119,14 +119,18 @@ const LoginPopup = ({ setShowLogin, setForgetpass }) => {
                         required
                     />
                     {CurrentState === "Login" ? null : (
-                        <input
-                            name='otp'
-                            onChange={onChangeHandler}
-                            value={Data.otp}
-                            type="text"
-                            placeholder='Enter OTP'
-                            required
-                        />
+                        <div>
+                            <p style={{ fontSize: '12px', marginBottom: '6px' }}>Please click on Send OTP to get OTP.</p>
+                            <input
+                                style={{ width: '100%' }}
+                                name='otp'
+                                onChange={onChangeHandler}
+                                value={Data.otp}
+                                type="text"
+                                placeholder='Enter OTP'
+                                required
+                            />
+                        </div>
                     )}
 
                 </div>
