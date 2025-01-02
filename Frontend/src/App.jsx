@@ -19,9 +19,9 @@ const App = () => {
   const [Forgetpass, setForgetpass] = useState(false)
   const [searchquery, setsearchquery] = useState('')
 
-  // document.addEventListener("contextmenu", function (event) {
-  //   event.preventDefault();
-  // });
+  document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+  });
   return (
     <>
       <ToastContainer />
