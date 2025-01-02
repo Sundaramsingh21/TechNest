@@ -100,6 +100,7 @@ const List = ({ url }) => {
         {List.map((item, index) => {
           return (
             <div key={index} className='list-table-format'>
+              
               <img src={Items[item.image]} alt="" />
               <p style={{overflow: 'hidden'}} >{item.name}</p>
               <p>{item.category}</p>
