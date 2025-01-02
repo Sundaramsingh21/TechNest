@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import Loader from '../../components/Loader/Loader';
+import {Items} from '../../assets/Items/Item'
+
 const List = ({ url }) => {
   const [LoaderL, setLoaderL] = useState(false)
   const [List, setList] = useState([]);
@@ -98,7 +100,7 @@ const List = ({ url }) => {
         {List.map((item, index) => {
           return (
             <div key={index} className='list-table-format'>
-              <img src={`${url}/images/` + item.image} alt="" />
+              <img src={Items[item.image]} alt="" />
               <p style={{overflow: 'hidden'}} >{item.name}</p>
               <p>{item.category}</p>
               <p>₹{item.price}</p>
