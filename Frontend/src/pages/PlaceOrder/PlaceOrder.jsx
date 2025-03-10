@@ -56,7 +56,7 @@ const PlaceOrder = () => {
       let response = await axios.post(`${url}/api/order/place`, orderData, { headers: { Token } });
       setLoaderP(false);
 
-      if (response.data.success && Data.utr && Data.phone && Data.email && Data.firstName && Data.city) {
+      if (response.data.success && Data.utr && Data.phone && Data.email && Data.firstName && Data.city && Data.length > 8) {
 
         alert("Order Placed Successfully!");
         navigate('/myorders');
