@@ -51,7 +51,7 @@ const Navbar = ({ setShowLogin, setsearchquery, searchquery }) => {
                 {showSearch ? <></> : <img onClick={() => setshowSearch(true)} src={assets.search_icon} alt="" />}
                 <div className="navbar-search-icon">
 
-                    <Link to='/cart'>
+                    <Link to='/cart' onClick={()=>scrollTo(0,0) } >
                         <lord-icon
                             src="https://cdn.lordicon.com/pbrgppbb.json"
                             trigger="hover"
